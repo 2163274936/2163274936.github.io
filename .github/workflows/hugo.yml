@@ -1,0 +1,30 @@
+name: Hugo Build and Deploy
+on:
+  push:
+    branches:
+      - main  # 监听 main 分支的推送事件
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest  # 使用最新版 Ubuntu 环境
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # 拉取主题子模块（如果使用了 git submodule）
+          fetch-depth: 0    # 获取完整的版本历史
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.115.4'  # 指定 Hugo 版本，与本地一致
+          extended: true           # 启用 extended 版本（支持 SCSS）
+
+      - name: Build
+        run: hugo --minify         # 执行 Hugo 构建，压缩输出文件
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}  # GitHub 自动生成的令牌
+          publish_dir: ./public                      # 静态文件输出目录
+          publish_branch: gh-pages                   # 部署到 gh-pages 分支
