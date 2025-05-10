@@ -7,7 +7,9 @@ theme = "ananke"
 # 网站元数据（可选但推荐）
 enableRobotsTXT = true
 summaryLength = 30
-paginate = 10
+
+[pagination]
+  pagerSize = 10
 
 # 永久链接配置（重要！确保 URL 格式正确）
 [permalinks]
@@ -28,6 +30,7 @@ paginate = 10
 [params]
   description = "维利翁的个人博客"
   author = "维利翁"
+
   [params.social]
     github = "2163274936"  # GitHub 用户名
     email = "villioncps7@gmail.com"  # 邮箱（可选）
