@@ -37,7 +37,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo version
-          hugo --minify --verbose
+          hugo --minify  # 关键修改：移除 --verbose
           echo "构建结果:"
           ls -al public
           
