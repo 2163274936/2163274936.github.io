@@ -1,4 +1,4 @@
-baseURL = "http://2163274936.github.io"  # 后续部署到GitHub时改为你的仓库URL
+baseURL = "https://2163274936.github.io/"  # 后续部署到GitHub时改为你的仓库URL
 languageCode = "zh-CN"          # 设置中文（可选）
 title = "维利翁的blog"           # 自定义标题
 theme = "ananke"                 # 启用主题
