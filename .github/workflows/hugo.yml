@@ -10,13 +10,22 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: false  # 禁用子模块拉取
+          submodules: false  # 明确禁用子模块
           fetch-depth: 0
+          
+      - name: Clean up submodule config
+        run: |
+          # 确保没有残留的子模块配置
+          if [ -f ".gitmodules" ]; then
+            echo "删除 .gitmodules 文件"
+            rm .gitmodules
+          fi
+          git config --local --unset-all submodule.themes/ananke.url || true
           
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'  # 使用最新稳定版
+          hugo-version: 'latest'
           extended: true
           
       - name: Get Theme
@@ -29,7 +38,7 @@ jobs:
           HUGO_ENV: production
         run: |
           hugo version
-          hugo --minify --verbose  # 关键修改：使用 --verbose 替代 --debug
+          hugo --minify --verbose
           echo "构建结果:"
           ls -al public
           
@@ -39,4 +48,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force_orphan: true  # 确保创建 gh-pages 分支
+          force_orphan: true  # 强制创建独立分支
