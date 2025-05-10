@@ -1,45 +1,46 @@
 name: Hugo Build and Deploy
-
 on:
   push:
     branches:
       - main
-
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout (no submodules)
+      - name: Checkout
         uses: actions/checkout@v4
         with:
+          submodules: false  # 禁用子模块
           fetch-depth: 0
-          submodules: false
-
-      - name: Remove stale submodule references (if any)
+          
+      - name: Clean up theme directory
         run: |
-          echo "Cleaning stale .gitmodules and submodule config"
-          rm -f .gitmodules
-          git config --local --remove-section submodule.themes/ananke || true
-          rm -rf .git/modules/themes/ananke || true
-          rm -rf themes/ananke/.git || true
-
+          echo "清理主题目录..."
+          rm -rf themes/ananke  # 彻底删除现有目录
+          mkdir -p themes       # 确保 themes 目录存在
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-
-      - name: Download Theme (Ananke)
+          
+      - name: Get Theme
         run: |
-          mkdir -p themes
+          echo "克隆 Ananke 主题..."
           git clone --depth=1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-
-      - name: Build Site
+          echo "主题目录内容:"
+          ls -al themes/ananke
+          
+      - name: Build
+        env:
+          HUGO_ENV: production
         run: |
-          hugo --minify
+          hugo version
+          hugo --minify --verbose
+          echo "构建结果:"
           ls -al public
-
+          
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
