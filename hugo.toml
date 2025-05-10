@@ -1,4 +1,33 @@
-baseURL = "https://2163274936.github.io/"  # 后续部署到GitHub时改为你的仓库URL
-languageCode = "zh-CN"          # 设置中文（可选）
-title = "维利翁的blog"           # 自定义标题
-theme = "ananke"                 # 启用主题
+# 基础配置
+baseURL = "https://2163274936.github.io/"  # 必须与 GitHub Pages 地址完全一致（结尾带斜杠！）
+languageCode = "zh-CN"
+title = "维利翁的blog"
+theme = "ananke"
+
+# 网站元数据（可选但推荐）
+enableRobotsTXT = true
+summaryLength = 30
+paginate = 10
+
+# 永久链接配置（重要！确保 URL 格式正确）
+[permalinks]
+  posts = "/:year/:month/:day/:slug/"  # 文章链接格式：/2023/01/01/my-post/
+
+# 构建配置
+[build]
+  writeStats = true  # 生成构建统计信息
+  minify = true      # 压缩 HTML/CSS/JS
+
+# 服务器配置（仅本地预览时生效）
+[server]
+  port = 1313        # 本地预览端口
+  baseURL = "http://localhost:1313/"  # 本地预览使用 localhost
+  appendPort = true  # 自动添加端口到 URL
+
+# 主题配置（根据 ananke 主题调整）
+[params]
+  description = "维利翁的个人博客"
+  author = "维利翁"
+  [params.social]
+    github = "2163274936"  # GitHub 用户名
+    email = "villioncps7@gmail.com"  # 邮箱（可选）
