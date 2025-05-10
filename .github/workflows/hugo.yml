@@ -9,7 +9,10 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        
+        with:
+          submodules: false  # 明确禁用子模块拉取
+          fetch-depth: 0
+          
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
@@ -22,6 +25,8 @@ jobs:
           git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
           
       - name: Build
+        env:
+          HUGO_ENV: production  # 生产环境下忽略草稿文章
         run: |
           hugo version
           hugo --minify --debug
@@ -32,4 +37,4 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force_orphan: true
+          force_orphan: true  # 强制创建独立分支（解决分支未创建问题）
