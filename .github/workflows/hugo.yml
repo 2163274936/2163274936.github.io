@@ -1,51 +1,46 @@
 name: Hugo Build and Deploy
+
 on:
   push:
     branches:
       - main
+
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v4
         with:
-          submodules: false  # 明确禁用子模块
-          fetch-depth: 0
-          
-      - name: Clean up submodule config
+          fetch-depth: 0  # 保留提交历史
+          submodules: false  # 禁用子模块
+
+      - name: Remove stale submodule references (if any)
         run: |
-          # 确保没有残留的子模块配置
-          if [ -f ".gitmodules" ]; then
-            echo "删除 .gitmodules 文件"
-            rm .gitmodules
-          fi
-          git config --local --unset-all submodule.themes/ananke.url || true
-          
+          rm -f .gitmodules
+          git config --local --remove-section submodule.themes/ananke || true
+
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
           hugo-version: 'latest'
           extended: true
-          
-      - name: Get Theme
+
+      - name: Get Theme (Ananke)
         run: |
           mkdir -p themes
-          git clone https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
-          
-      - name: Build
-        env:
-          HUGO_ENV: production
+          git clone --depth=1 https://github.com/theNewDynamic/gohugo-theme-ananke.git themes/ananke
+
+      - name: Build site with Hugo
         run: |
-          hugo version
-          hugo --minify --verbose
-          echo "构建结果:"
+          hugo --minify
           ls -al public
-          
+
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v4
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./public
           publish_branch: gh-pages
-          force_orphan: true  # 强制创建独立分支
+          force_orphan: true
