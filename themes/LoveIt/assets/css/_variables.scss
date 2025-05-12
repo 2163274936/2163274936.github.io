@@ -16,16 +16,16 @@ $global-font-weight: 400 !default;
 $global-line-height: 1.5rem !default;
 
 // Color of the background
-$global-background-color: #fff !default;
-$global-background-color-dark: #292a2d !default;
+$global-background-color: #e7e1e1 !default;
+$global-background-color-dark: #1a1b1b !default;
 
 // Color of the text
 $global-font-color: #161209 !default;
-$global-font-color-dark: #a9a9b3 !default;
+$global-font-color-dark: #c7c7cb !default;
 
 // Color of the secondary text
-$global-font-secondary-color: #a9a9b3 !default;
-$global-font-secondary-color-dark: #5d5d5f !default;
+$global-font-secondary-color: #717178 !default;
+$global-font-secondary-color-dark: #a6a6ab !default;
 
 // Color of the link
 $global-link-color: #161209 !default;
@@ -82,7 +82,7 @@ $toc-content-font-size: 0.875rem !default;
 
 // Color of the single link
 $single-link-color: #2d96bd !default;
-$single-link-color-dark: #55bde2 !default;
+$single-link-color-dark: #c655e2 !default;
 
 // Color of the hover single link
 $single-link-hover-color: #ef3982 !default;
@@ -117,7 +117,7 @@ $code-font-family: "Source Code Pro", Menlo, Monaco, Consolas, "Liberation Mono"
 $code-font-size: .875rem !default;
 
 // Color of the code
-$code-color: #E74C3C !default;
+$code-color: #e02997 !default;
 $code-color-dark: #E5BF78 !default;
 
 // Color of the code background

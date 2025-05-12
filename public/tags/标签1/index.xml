@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>标签1 on 维利翁的Hugo Blog</title>
+    <link>http://localhost:1313/tags/%E6%A0%87%E7%AD%BE1/</link>
+    <description>Recent content in 标签1 on 维利翁的Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
+    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/%E6%A0%87%E7%AD%BE1/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>示例文章标题</title>
+      <link>http://localhost:1313/template2/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
+      <guid>http://localhost:1313/template2/</guid>
+      <description>这是一篇示例文章的摘要，简要概括文章的主要内容。</description>
+    </item>
+  </channel>
+</rss>

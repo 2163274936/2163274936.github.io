@@ -84,7 +84,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
     post = ""
 
-    name = "文章"
+    name = "所有文章"
 
     url = "/posts/"
 
@@ -123,6 +123,21 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     url = "/categories/"
 
     title = ""
+  [[menu.main]]
+
+    weight = 4
+
+    identifier = "about me"
+
+    pre = ""
+
+    post = ""
+
+    name = "关于我"
+
+    url = "/_about/"
+
+    title = ""
 
 
 
@@ -156,7 +171,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   # 网站图片, 用于 Open Graph 和 Twitter Cards
 
-  images = ["/logo.png"]
+  images = ["/images/logo.png"]
 
 
 
@@ -190,11 +205,11 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       # LOGO 的 URL
 
-      logo = ""
+      logo = "/images/logo.png"
 
       # 标题名称
 
-      name = ""
+      name = "villion"
 
       # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
 
@@ -296,7 +311,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
     # 更现代的 SVG 网站图标, 可替代旧的 .png 和 .ico 文件
 
-    svgFavicon = ""
+    svgFavicon = "/images/logo.svg"
 
     # Android 浏览器主题色
 
@@ -380,15 +395,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       #  主页显示的网站标题 (支持 HTML 格式)
 
-      title = ""
+      title = "维利翁的Hugo Blog"
 
       # 主页显示的网站副标题 (允许 HTML 格式)
 
-      subtitle = "这是我的全新 Hugo 网站"
+      subtitle = "Villion's Hugo Blog"
 
       # 是否为副标题显示打字机动画
 
-      typeit = true
+      typeit = false
 
       # 是否显示社交账号
 
@@ -420,170 +435,15 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
   [params.social]
 
-    GitHub = "xxxx"
+    GitHub = "2163274936"
 
-    Linkedin = ""
+    Spotify = "314xzjs35ucuwolwa3elewh5n4fm"
 
-    X = "xxxx" # 
+    Steam = "" 
 
-    Twitter = "" # 
+    Bilibili = "323354426?spm_id_from=333.1007.0.0"
 
-    Instagram = "xxxx"
-
-    Facebook = "xxxx"
-
-    Telegram = "xxxx"
-
-    Medium = ""
-
-    Gitlab = ""
-
-    Youtubelegacy = ""
-
-    Youtubecustom = ""
-
-    Youtubechannel = ""
-
-    Tumblr = ""
-
-    Quora = ""
-
-    Keybase = ""
-
-    Pinterest = ""
-
-    Reddit = ""
-
-    Codepen = ""
-
-    FreeCodeCamp = ""
-
-    Bitbucket = ""
-
-    Stackoverflow = ""
-
-    Weibo = ""
-
-    Odnoklassniki = ""
-
-    VK = ""
-
-    Flickr = ""
-
-    Xing = ""
-
-    Snapchat = ""
-
-    Soundcloud = ""
-
-    Spotify = ""
-
-    Bandcamp = ""
-
-    Paypal = ""
-
-    Fivehundredpx = ""
-
-    Mix = ""
-
-    Goodreads = ""
-
-    Lastfm = ""
-
-    Foursquare = ""
-
-    Hackernews = ""
-
-    Kickstarter = ""
-
-    Patreon = ""
-
-    Steam = ""
-
-    Twitch = ""
-
-    Strava = ""
-
-    Skype = ""
-
-    Whatsapp = ""
-
-    Zhihu = ""
-
-    Douban = ""
-
-    Angellist = ""
-
-    Slidershare = ""
-
-    Jsfiddle = ""
-
-    Deviantart = ""
-
-    Behance = ""
-
-    Dribbble = ""
-
-    Wordpress = ""
-
-    Vine = ""
-
-    Googlescholar = ""
-
-    Researchgate = ""
-
-    Mastodon = ""
-
-    Thingiverse = ""
-
-    Devto = ""
-
-    Gitea = ""
-
-    XMPP = ""
-
-    Matrix = ""
-
-    Bilibili = ""
-
-    Discord = ""
-
-    DiscordInvite = ""
-
-    Lichess = ""
-
-    ORCID = ""
-
-    Pleroma = ""
-
-    Kaggle = ""
-
-    MediaWiki = ""
-
-    Plume = ""
-
-    HackTheBox = ""
-
-    RootMe = ""
-
-    Malt = "" # 
-
-    TikTok = "" # 
-
-    TryHackMe = "" # 
-
-    Codeberg = "" # 
-
-    HuggingFace = "" # 
-
-    Threads = "" # 
-
-    Phone = ""
-
-    Email = "xxxx@xxxx.com"
-
-    RSS = true # 
-
+    Email = "villioncps7@gmail.com"
 
 
   #  文章页面全局配置
@@ -718,13 +578,13 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       enable = true
 
-      X = true # 
+      X = false # 
 
       Twitter = false # 
 
-      Threads = true # 
+      Threads = false # 
 
-      Facebook = true
+      Facebook = false
 
       Linkedin = false
 
@@ -744,7 +604,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       Xing = false
 
-      Line = true
+      Line = false
 
       Instapaper = false
 
@@ -770,7 +630,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       Mix = false
 
-      Telegram = true # 
+      Telegram = false # 
 
     #  评论系统设置
 
@@ -949,7 +809,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
     [params.page.library]
 
       [params.page.library.css]
-
+          custom = "custom.css"
         # someCSS = "some.css"
 
         # 位于 "assets/"

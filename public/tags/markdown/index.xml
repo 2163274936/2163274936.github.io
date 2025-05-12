@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Markdown on 维利翁的Hugo Blog</title>
+    <link>http://localhost:1313/tags/markdown/</link>
+    <description>Recent content in Markdown on 维利翁的Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
+    <lastBuildDate>Thu, 15 Jun 2023 14:30:00 +0800</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/markdown/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的第一篇笔记</title>
+      <link>http://localhost:1313/template1/</link>
+      <pubDate>Thu, 15 Jun 2023 14:30:00 +0800</pubDate>
+      <guid>http://localhost:1313/template1/</guid>
+      <description>&lt;h1 id=&#34;我的第一篇笔记&#34;&gt;我的第一篇笔记&lt;/h1&gt;&#xA;&lt;p&gt;欢迎来到我的技术笔记网站！这个网站使用 &lt;a href=&#34;https://gohugo.io/&#34; target=&#34;_blank&#34; rel=&#34;noopener noreffer &#34;&gt;Hugo&lt;/a&gt; 构建，配合 Markdown 语法记录我的学习过程。&lt;/p&gt;&#xA;&lt;h2 id=&#34;为什么选择-hugo&#34;&gt;为什么选择 Hugo？&lt;/h2&gt;&#xA;&lt;p&gt;选择 Hugo 作为笔记工具的主要原因：&lt;/p&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;strong&gt;速度快&lt;/strong&gt; - 静态网站生成器，毫秒级构建时间&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;灵活性高&lt;/strong&gt; - 支持多种主题和自定义&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;便于管理&lt;/strong&gt; - 纯文本文件，可使用 Git 进行版本控制&lt;/li&gt;&#xA;&lt;li&gt;&lt;strong&gt;Markdown 友好&lt;/strong&gt; - 原生支持 Markdown 语法&lt;/li&gt;&#xA;&lt;/ol&gt;&#xA;&lt;h2 id=&#34;基本使用&#34;&gt;基本使用&lt;/h2&gt;&#xA;&lt;p&gt;创建新笔记的命令：&#xA;hugo new posts/your-note-title.md&#xA;启动本地服务器预览：&#xA;hugo server -D&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

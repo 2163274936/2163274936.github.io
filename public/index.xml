@@ -3,7 +3,17 @@
         <title>维利翁的Hugo Blog</title>
         <link>http://localhost:1313/</link>
         <description>villion&#39;s hugo blog</description>
-        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright><lastBuildDate>Tue, 13 May 2025 00:02:11 &#43;0800</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright><lastBuildDate>Sun, 11 May 2025 00:00:00 &#43;0800</lastBuildDate>
             <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
-        </channel>
+        <item>
+    <title>Windows基于Hugo &#43; GitHub Pages &#43; Cloudflare搭建个人博客</title>
+    <link>http://localhost:1313/windows%E5%9F%BA%E4%BA%8Ehugo--github-pagesda--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</link>
+    <pubDate>Sun, 11 May 2025 00:00:00 &#43;0800</pubDate>
+    <author>维利翁</author>
+    <guid>http://localhost:1313/windows%E5%9F%BA%E4%BA%8Ehugo--github-pagesda--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</guid>
+    <description><![CDATA[<div class="featured-image">
+                <img src="/images/anake.jpg" referrerpolicy="no-referrer">
+            </div>windows系统0成本通过Github仓库托管Hugo静态网站生成器最后通过cloudflare自定义域名搭建个人blog]]></description>
+</item>
+</channel>
 </rss>
