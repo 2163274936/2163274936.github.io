@@ -1,0 +1,50 @@
+name: Hugo Build and Deploy
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          submodules: true  # 递归获取子模块（LoveIt 主题需要）
+          fetch-depth: 0    # 获取全部历史以确保正确版本
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: '0.147.2'  # 使用您当前的 Hugo 版本
+          extended: true           # 需要扩展版本支持 SCSS
+
+      - name: Cache dependencies
+        uses: actions/cache@v3
+        with:
+          path: |
+            resources/_gen
+            public
+          key: ${{ runner.os }}-hugo-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-
+
+      - name: Build
+        env:
+          HUGO_ENV: production
+        run: |
+          hugo version
+          hugo --minify --gc --cleanDestinationDir  # 清理并优化构建
+          echo "构建完成，输出内容:"
+          ls -al public
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+          publish_branch: gh-pages
+          force_orphan: true
+          commit_message: ${{ github.event.head_commit.message }}  # 使用提交信息
