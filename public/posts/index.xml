@@ -1,0 +1,7 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>All Posts - 维利翁的Hugo Blog</title>
+        <link>http://localhost:1313/posts/</link>
+        <description>All Posts | 维利翁的Hugo Blog</description>
+        <generator>Hugo -- gohugo.io</generator><language>zh-CN</language><copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright><lastBuildDate>Tue, 13 May 2025 00:02:11 &#43;0800</lastBuildDate><atom:link href="http://localhost:1313/posts/" rel="self" type="application/rss+xml" /></channel>
+</rss>
