@@ -1069,8 +1069,8 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 [Permalinks]
 
   # posts = ":year/:month/:filename"
-
-  posts = ":filename"
+    posts = "/posts/:slug/:filename"
+  # posts = ":filename"
 
 
 
