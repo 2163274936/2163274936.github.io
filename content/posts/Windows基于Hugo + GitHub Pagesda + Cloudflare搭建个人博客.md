@@ -13,9 +13,8 @@ summary: windows系统0成本通过Github仓库托管Hugo静态网站生成器�
 showSummary: true
 draft: false
 comments: false
-resources:
-  - name: rbl
-    src: rbl.jpg
+featuredImage: images/anake.jpg
+featuredImagePreview: images/anake.jpg
 ---
 
 # Hugo + GitHub Pages 是什么？
