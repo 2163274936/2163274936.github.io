@@ -11,14 +11,12 @@
             "id": "f8633885415dea2e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "image",
               "state": {
-                "file": "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
-                "mode": "source",
-                "source": false
+                "file": "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/rbl.png"
               },
-              "icon": "lucide-file",
-              "title": "Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客"
+              "icon": "lucide-image",
+              "title": "rbl"
             }
           }
         ]
@@ -180,8 +178,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c80fcc9dace1e93b",
+  "active": "f8633885415dea2e",
   "lastOpenFiles": [
+    "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/images/rbl.png",
+    "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/rbl.png",
     "posts/rbl.png",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
