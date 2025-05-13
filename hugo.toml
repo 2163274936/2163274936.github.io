@@ -221,7 +221,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       #  是否为标题显示打字机动画
 
-      typeit = false
+      typeit = true
 
 
 
