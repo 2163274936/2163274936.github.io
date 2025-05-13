@@ -10,10 +10,13 @@ tags:
   - GithubPages
   - Blog
 summary: windows系统0成本通过Github仓库托管Hugo静态网站生成器最后通过cloudflare自定义域名搭建个人blog
+featuredImage: 
 showSummary: true
 draft: false
 comments: false
-featuredImage: images/anake.jpg
+resources:
+  - name: rbl
+    src: rbl.png
 ---
 
 # Hugo + GitHub Pages 是什么？
