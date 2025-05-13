@@ -403,7 +403,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       # 是否为副标题显示打字机动画
 
-      typeit = false
+      typeit = true
 
       # 是否显示社交账号
 
