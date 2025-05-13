@@ -11,12 +11,14 @@
             "id": "f8633885415dea2e",
             "type": "leaf",
             "state": {
-              "type": "image",
+              "type": "markdown",
               "state": {
-                "file": "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/rbl.png"
+                "file": "posts/hugo-github-pages-one/index.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "lucide-image",
-              "title": "rbl"
+              "icon": "lucide-file",
+              "title": "index"
             }
           }
         ]
@@ -180,10 +182,16 @@
   },
   "active": "f8633885415dea2e",
   "lastOpenFiles": [
+    "posts/rbl.png",
+    "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/rbl.png",
+    "posts/hugo-github-pages-one/index.md",
+    "posts/hugo-github-pages-one/images/rbl.png",
+    "posts/hugo-github-pages-one/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
+    "posts/hugo-github-pages-one/rbl.png",
+    "posts/hugo-github-pages-one/images",
+    "posts/hugo-github-pages-one",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/images/rbl.png",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
-    "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/rbl.png",
-    "posts/rbl.png",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/rbl.jpg",
     "posts/images/anake.jpg",

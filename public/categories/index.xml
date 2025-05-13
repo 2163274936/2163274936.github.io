@@ -2,25 +2,25 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on 维利翁的Hugo Blog</title>
-    <link>http://localhost:1313/categories/</link>
+    <link>https://2163274936.github.io/categories/</link>
     <description>Recent content in Categories on 维利翁的Hugo Blog</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 May 2025 08:36:02 +0800</lastBuildDate>
+    <atom:link href="https://2163274936.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Blog</title>
-      <link>http://localhost:1313/categories/blog/</link>
+      <link>https://2163274936.github.io/categories/blog/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/blog/</guid>
+      <guid>https://2163274936.github.io/categories/blog/</guid>
       <description></description>
     </item>
     <item>
       <title>关于</title>
-      <link>http://localhost:1313/categories/%E5%85%B3%E4%BA%8E/</link>
+      <link>https://2163274936.github.io/categories/%E5%85%B3%E4%BA%8E/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/categories/%E5%85%B3%E4%BA%8E/</guid>
+      <guid>https://2163274936.github.io/categories/%E5%85%B3%E4%BA%8E/</guid>
       <description></description>
     </item>
   </channel>

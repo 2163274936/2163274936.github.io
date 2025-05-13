@@ -2,15 +2,15 @@
     xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:xhtml="http://www.w3.org/1999/xhtml"
     ><url>
-            <loc>http://localhost:1313/tags/about/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/categories/blog/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/tags/blog/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/categories/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/tags/githubpages/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/tags/hugo/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/posts/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/tags/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/windows%E5%9F%BA%E4%BA%8Ehugo--github-pagesda--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/categories/%E5%85%B3%E4%BA%8E/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/_about/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
-            <loc>http://localhost:1313/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>
+            <loc>https://2163274936.github.io/tags/about/</loc><lastmod>2025-05-13T08:36:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/categories/blog/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/tags/blog/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/categories/</loc><lastmod>2025-05-13T08:36:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/tags/githubpages/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/tags/hugo/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/posts/</loc><lastmod>2025-05-13T03:03:31&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/tags/</loc><lastmod>2025-05-13T08:36:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc><lastmod>2025-05-11T00:00:00&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/categories/%E5%85%B3%E4%BA%8E/</loc><lastmod>2025-05-13T08:36:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/_about/</loc><lastmod>2025-05-13T08:36:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url><url>
+            <loc>https://2163274936.github.io/</loc><lastmod>2025-05-13T08:36:02&#43;08:00</lastmod><changefreq>weekly</changefreq><priority>1</priority></url></urlset>

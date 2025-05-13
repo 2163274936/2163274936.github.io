@@ -2,18 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>关于 on 维利翁的Hugo Blog</title>
-    <link>http://localhost:1313/categories/%E5%85%B3%E4%BA%8E/</link>
+    <link>https://2163274936.github.io/categories/%E5%85%B3%E4%BA%8E/</link>
     <description>Recent content in 关于 on 维利翁的Hugo Blog</description>
     <generator>Hugo</generator>
     <language>zh-CN</language>
     <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
-    <lastBuildDate>Sun, 11 May 2025 00:00:00 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/categories/%E5%85%B3%E4%BA%8E/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 13 May 2025 08:36:02 +0800</lastBuildDate>
+    <atom:link href="https://2163274936.github.io/categories/%E5%85%B3%E4%BA%8E/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>关于我about me</title>
-      <link>http://localhost:1313/_about/</link>
+      <link>https://2163274936.github.io/_about/</link>
       <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
-      <guid>http://localhost:1313/_about/</guid>
+      <guid>https://2163274936.github.io/_about/</guid>
       <description>这是摘要关于</description>
     </item>
   </channel>
