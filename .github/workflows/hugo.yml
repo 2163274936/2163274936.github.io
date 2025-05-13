@@ -12,14 +12,14 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
         with:
-          submodules: true  # 递归获取子模块（LoveIt 主题需要）
-          fetch-depth: 0    # 获取全部历史以确保正确版本
+          submodules: true
+          fetch-depth: 0
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: '0.147.2'  # 使用您当前的 Hugo 版本
-          extended: true           # 需要扩展版本支持 SCSS
+          hugo-version: '0.147.2'
+          extended: true
 
       - name: Cache dependencies
         uses: actions/cache@v3
@@ -31,12 +31,32 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
+      - name: Check CNAME file
+        run: |
+          if [ -f "static/CNAME" ]; then
+            echo "✅ CNAME 文件存在"
+            cat static/CNAME
+            cp static/CNAME public/  # 确保CNAME文件被复制到发布目录
+          else
+            echo "❌ 未找到 CNAME 文件"
+            read -p "是否创建CNAME文件？(y/n): " create
+            if [ "$create" = "y" ]; then
+              read -p "请输入自定义域名: " domain
+              mkdir -p static
+              echo "$domain" > static/CNAME
+              echo "✅ CNAME 文件已创建: static/CNAME"
+              cp static/CNAME public/
+            else
+              echo "⚠️ 跳过CNAME文件创建，使用默认GitHub Pages域名"
+            fi
+          fi
+
       - name: Build
         env:
           HUGO_ENV: production
         run: |
           hugo version
-          hugo --minify --gc --cleanDestinationDir  # 清理并优化构建
+          hugo --minify --gc --cleanDestinationDir
           echo "构建完成，输出内容:"
           ls -al public
 
@@ -47,4 +67,4 @@ jobs:
           publish_dir: ./public
           publish_branch: gh-pages
           force_orphan: true
-          commit_message: ${{ github.event.head_commit.message }}  # 使用提交信息
+          commit_message: ${{ github.event.head_commit.message }}  
