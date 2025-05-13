@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_about.md",
+                "file": "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_about"
+              "title": "Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客"
             }
           }
         ]
@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -182,8 +182,11 @@
   },
   "active": "f8633885415dea2e",
   "lastOpenFiles": [
-    "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
+    "posts/template/template2.md",
+    "---.md",
     "_about.md",
+    "posts/template/template1.md",
+    "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "about.md",
     "about/about.md",
     "about",

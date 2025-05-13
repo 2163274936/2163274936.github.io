@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "content/posts/theme-documentation-basics/index.en.md",
+                "file": "content/posts/basic-markdown-syntax/index.en.md",
                 "mode": "source",
                 "source": false
               },
@@ -170,14 +170,17 @@
   },
   "active": "e0326f4ce27e40d4",
   "lastOpenFiles": [
-    "content/posts/theme-documentation-basics/index.zh-cn.md",
+    "content/posts/basic-markdown-syntax/featured-image.png",
+    "content/posts/theme-documentation-bilibili-shortcode/index.en.md",
+    "content/posts/theme-documentation-bilibili-shortcode/index.zh-cn.md",
+    "content/posts/theme-documentation-basics/basic-configuration-preview.png",
     "content/posts/theme-documentation-basics/index.en.md",
+    "content/posts/theme-documentation-basics/index.zh-cn.md",
     "content/posts/theme-documentation-basics/hugo-extended-edition.png",
     "content/posts/theme-documentation-basics/featured-image.jpg",
     "content/posts/theme-documentation-basics/complete-configuration-preview.zh-cn.png",
     "content/posts/theme-documentation-basics/complete-configuration-preview.png",
     "content/posts/theme-documentation-basics/basic-configuration-preview.zh-cn.png",
-    "content/posts/theme-documentation-basics/basic-configuration-preview.png",
     "content/about/index.zh-cn.md",
     "content/about/index.en.md"
   ]
