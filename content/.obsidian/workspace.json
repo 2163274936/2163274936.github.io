@@ -180,8 +180,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "f8633885415dea2e",
+  "active": "d8861df46df13346",
   "lastOpenFiles": [
+    "images/anake.jpg",
+    "images",
+    "新建文件夹",
     "posts/anake.jpg",
     "posts/template/template2.md",
     "---.md",
@@ -190,7 +193,6 @@
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "about.md",
     "about/about.md",
-    "about",
-    "新建文件夹"
+    "about"
   ]
 }
