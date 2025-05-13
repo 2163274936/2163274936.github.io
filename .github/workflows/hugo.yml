@@ -31,31 +31,32 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-hugo-
 
-      - name: Check CNAME file
+      - name: Check and preserve CNAME
         run: |
           if [ -f "CNAME" ]; then
-            echo "✅ CNAME 文件存在"
-            cat CNAME
-            cp CNAME public/  # 从根目录复制到发布目录
+            echo "✅ CNAME 文件存在，将在构建后复制到public目录"
           else
-            echo "❌ 未找到 CNAME 文件"
-            read -p "是否创建CNAME文件？(y/n): " create
-            if [ "$create" = "y" ]; then
-              read -p "请输入自定义域名: " domain
-              echo "$domain" > CNAME
-              echo "✅ CNAME 文件已创建: CNAME"
-              cp CNAME public/
+            echo "❌ 未找到CNAME文件，检查GitHub Pages设置中的自定义域名"
+            if [ -n "$CUSTOM_DOMAIN" ]; then
+              echo "使用环境变量中的域名创建CNAME文件"
+              echo "$CUSTOM_DOMAIN" > CNAME
             else
-              echo "⚠️ 跳过CNAME文件创建，使用默认GitHub Pages域名"
+              echo "⚠️ 未设置CUSTOM_DOMAIN环境变量，将使用GitHub Pages默认域名"
             fi
           fi
 
       - name: Build
         env:
           HUGO_ENV: production
+          CUSTOM_DOMAIN: ${{ secrets.CUSTOM_DOMAIN }}  # 从GitHub Secrets获取域名
         run: |
           hugo version
           hugo --minify --gc --cleanDestinationDir
+          # 构建后始终复制CNAME文件，确保覆盖public目录
+          if [ -f "CNAME" ]; then
+            cp CNAME public/
+            echo "✅ CNAME文件已复制到public目录"
+          fi
           echo "构建完成，输出内容:"
           ls -al public
 
