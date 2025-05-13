@@ -33,19 +33,18 @@ jobs:
 
       - name: Check CNAME file
         run: |
-          if [ -f "static/CNAME" ]; then
+          if [ -f "CNAME" ]; then
             echo "✅ CNAME 文件存在"
-            cat static/CNAME
-            cp static/CNAME public/  # 确保CNAME文件被复制到发布目录
+            cat CNAME
+            cp CNAME public/  # 从根目录复制到发布目录
           else
             echo "❌ 未找到 CNAME 文件"
             read -p "是否创建CNAME文件？(y/n): " create
             if [ "$create" = "y" ]; then
               read -p "请输入自定义域名: " domain
-              mkdir -p static
-              echo "$domain" > static/CNAME
-              echo "✅ CNAME 文件已创建: static/CNAME"
-              cp static/CNAME public/
+              echo "$domain" > CNAME
+              echo "✅ CNAME 文件已创建: CNAME"
+              cp CNAME public/
             else
               echo "⚠️ 跳过CNAME文件创建，使用默认GitHub Pages域名"
             fi
