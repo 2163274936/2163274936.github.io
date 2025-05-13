@@ -14,7 +14,6 @@ showSummary: true
 draft: false
 comments: false
 featuredImage: images/anake.jpg
-featuredImagePreview: images/anake.jpg
 ---
 
 # Hugo + GitHub Pages 是什么？
