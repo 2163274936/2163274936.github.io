@@ -37,6 +37,13 @@ comments: false
 - 配置GitHub Actions（CI/CD 自动工作流） 自动部署博客
 
 - 使用使用黑曜石（Obsidian）等md笔记工具来写博客文章，配置git插件自动推送
+{{< admonition note "软件官网" >}}
+[Hugo-GitHub网站](https://github.com/gohugoio/hugo)
+[Git Bash](https://git-scm.com/downloads)
+[万网](https://wanwang.aliyun.com/)
+[CloudFlare](https://www.cloudflare.com/zh-cn/)
+[CloudFlare](https://obsidian.md/download)
+{{< version 0.2.10 >}})
   
   ## 什么是 Hugo？
   
@@ -91,9 +98,45 @@ comments: false
 5. **使用 Cloudflare CNAME 指向 GitHub Pages，跳转自定义域名。
 
 6. **使用 Obsidian 撰写博客文章**：本地编辑 Markdown 文件，提升写作效率。
-
 # 正式教程：
+<!--more-->
+## 1. 安装[Git Bash](https://git-scm.com/downloads). 一路默认Next不用任何更改
+![[Pasted image 20250514153131.png]]
+### 在cmd中输入  git --version 若有版本号即安装成功
+![[Pasted image 20250514153357.png]]
+### 没有版本回显就在Path变量中增加：C:\Program Files\Git\cmd
+![[Pasted image 20250514153733.png]]
+## 2. 部署Hugo
+### 打开[Hugo-GitHub网站](https://github.com/gohugoio/hugo)下载发行版压缩包
+![[Pasted image 20250514145203.png]]
+### 选择extended_windows
+![[Pasted image 20250514145521.png]]
+### 我解压到了D盘hugo
+![[Pasted image 20250514145654.png]]
+### 将 Hugo 的可执行文件所在目录添加到系统的`PATH`环境变量后，可在任意目录下使用`hugo`命令
+![[Pasted image 20250514145831.png]]
+![[Pasted image 20250514145902.png]]
+![[Pasted image 20250514150013.png]]
+### 可能需要重启生效，在cmd中输入  ```hugo version``` 若有版本号即安装成功
 
+![[Pasted image 20250514151240.png]]
+## 3. 安装Hugo博客站点
+### 打开cmd，进入你希望创建blog的目录，然后输入`hugo new site blog`，其中`blog`是你为博客取的名字，可以根据自己的喜好修改。执行该命令后，Hugo 会创建必要的配置文件和文件夹，并提示你输入一些站点信息，如站点标题、描述等。
+{{< admonition note "例子" >}}
+这里我想放在E盘,名字就叫myblog
+{{< version 0.2.10 >}})
+![[Pasted image 20250514152448.png]]
+## 4.初始化 Git
+### 进入新创建的站点目录，运行`git init`命令进行初始化，将该目录初始化为一个 Git 仓库，以便后续进行版本控制和部署。
+![[Pasted image 20250514155559.png]]
+## 5.选择和配置主题
+## 这里我个人使用Loveit主题 作者github:https://github.com/dillonzq/LoveIt 感谢作者Dillon提供
+## 我习惯直接去github手动下载主题压缩包[Loveit](https://github.com/dillonzq/LoveIt)
+![[Pasted image 20250514160658.png]]
+![[Pasted image 20250514160743.png]]   ![[Pasted image 20250514160816.png]]
+## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
+![[Pasted image 20250514161023.png]]
+![[Pasted image 20250514161039.png]]
 **加粗文本** 用于强调重点内容，*斜体文本* 用于表达不同的语气。
 
 1. 有序列表项1
@@ -111,3 +154,4 @@ comments: false
 继续丰富文章的内容，按照逻辑和结构进行合理的分段和阐述。
 
 <script defer src="[https://cdn.commento.io/js/commento.js](https://cdn.commento.io/js/commento.js)"></script> <div id="commento"></div>
+
