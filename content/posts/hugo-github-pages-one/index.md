@@ -43,8 +43,8 @@ comments: false
 [万网](https://wanwang.aliyun.com/)
 [CloudFlare](https://www.cloudflare.com/zh-cn/)
 [CloudFlare](https://obsidian.md/download)
-{{< version 0.2.10 >}})
-  
+{{< /admonition >}}
+
   ## 什么是 Hugo？
   
   ### Hugo 是一种**静态网站生成器**
