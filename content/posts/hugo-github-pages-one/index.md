@@ -38,13 +38,16 @@ comments: false
 
 - 使用使用黑曜石（Obsidian）等md笔记工具来写博客文章，配置git插件自动推送
 {{< admonition note "软件官网" >}}
-[Hugo-GitHub网站](https://github.com/gohugoio/hugo)
-[Git Bash](https://git-scm.com/downloads)
-[万网](https://wanwang.aliyun.com/)
-[CloudFlare](https://www.cloudflare.com/zh-cn/)
-[CloudFlare](https://obsidian.md/download)
-{{< /admonition >}}
+- [Hugo-GitHub网站](https://github.com/gohugoio/hugo)
 
+- [Git Bash](https://git-scm.com/downloads)
+
+- [万网](https://wanwang.aliyun.com/)
+
+- [CloudFlare](https://www.cloudflare.com/zh-cn/)
+
+- [obsidian](https://obsidian.md/download)
+{{< /admonition >}}
   ## 什么是 Hugo？
   
   ### Hugo 是一种**静态网站生成器**
