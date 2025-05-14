@@ -153,5 +153,4 @@ comments: false
 
 继续丰富文章的内容，按照逻辑和结构进行合理的分段和阐述。
 
-<script defer src="[https://cdn.commento.io/js/commento.js](https://cdn.commento.io/js/commento.js)"></script> <div id="commento"></div>
 
