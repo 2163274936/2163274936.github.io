@@ -137,7 +137,7 @@ comments: false
 ## 这里我个人使用Loveit主题 作者github:https://github.com/dillonzq/LoveIt 感谢作者Dillon提供
 ## 我习惯直接去github手动下载主题压缩包[Loveit](https://github.com/dillonzq/LoveIt)
 ![](14.png)
-![](15.png)  ![](16.png)
+  ![](16.png)
 ## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
 ![](1.png)
 ![](17.png)
