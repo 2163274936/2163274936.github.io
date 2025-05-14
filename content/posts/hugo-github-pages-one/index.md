@@ -124,7 +124,7 @@ comments: false
 ### 打开cmd，进入你希望创建blog的目录，然后输入`hugo new site blog`，其中`blog`是你为博客取的名字，可以根据自己的喜好修改。执行该命令后，Hugo 会创建必要的配置文件和文件夹，并提示你输入一些站点信息，如站点标题、描述等。
 {{< admonition note "例子" >}}
 这里我想放在E盘,名字就叫myblog
-{{< version 0.2.10 >}})
+{{< /admonition >}}
 ![[Pasted image 20250514152448.png]]
 ## 4.初始化 Git
 ### 进入新创建的站点目录，运行`git init`命令进行初始化，将该目录初始化为一个 Git 仓库，以便后续进行版本控制和部署。
