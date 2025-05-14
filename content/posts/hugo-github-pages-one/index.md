@@ -104,9 +104,9 @@ comments: false
 # 正式教程：
 <!--more-->
 ## 1. 安装[Git Bash](https://git-scm.com/downloads). 一路默认Next不用任何更改
-![[/images/Pasted image 20250514153131.png]]
+![[/Pasted image 20250514153131.png]]
 ### 在cmd中输入  git --version 若有版本号即安装成功
-![[Pasted image 20250514153357.png]]
+![[/Pasted image 20250514153357.png]]
 ### 没有版本回显就在Path变量中增加：C:\Program Files\Git\cmd
 ![[Pasted image 20250514153733.png]]
 ## 2. 部署Hugo
