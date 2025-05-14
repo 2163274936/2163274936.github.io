@@ -20,8 +20,23 @@
               "icon": "lucide-file",
               "title": "index"
             }
+          },
+          {
+            "id": "d5cf1746060bb4a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "posts/hugo-github-pages-one/index.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "index"
+            }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -180,20 +195,21 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d8861df46df13346",
+  "active": "d5cf1746060bb4a6",
   "lastOpenFiles": [
-    "Pasted.md",
+    "posts/hugo-github-pages-one/17.png",
+    "posts/hugo-github-pages-one/16.png",
+    "posts/hugo-github-pages-one/15.png",
+    "posts/hugo-github-pages-one/14.png",
+    "posts/hugo-github-pages-one/13.png",
+    "posts/hugo-github-pages-one/12.png",
+    "posts/hugo-github-pages-one/11.png",
+    "posts/hugo-github-pages-one/Pasted image 20250514152448.png",
     "posts/hugo-github-pages-one/index.md",
-    "posts/hugo-github-pages-one/Pasted image 20250514161039.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514151227.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514150013.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145902.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145831.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145812.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145654.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145638.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145521.png",
-    "posts/hugo-github-pages-one/Pasted image 20250514145203.png",
+    "posts/hugo-github-pages-one/10.png",
+    "posts/hugo-github-pages-one/9.png",
+    "posts/hugo-github-pages-one/8.png",
+    "Pasted.md",
     "posts/hugo-github-pages-one/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/hugo-github-pages-one/images",
     "posts/hugo-github-pages-one",
