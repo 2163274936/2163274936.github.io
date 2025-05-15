@@ -144,7 +144,7 @@ comments: false
 ### 打开myblog根目录的hugo.toml删除原有配置
 ### 把以下LoveIt 主题的基本配置粘贴进去:
 
-```yaml
+```bash
 baseURL = "http://example.org/"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
