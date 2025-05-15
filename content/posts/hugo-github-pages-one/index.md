@@ -142,7 +142,7 @@ comments: false
 ![](1.png)
 ![](17.png)
 ### 打开myblog根目录的hugo.toml删除原有配置
-### 把以下LoveIt 主题的基本配置粘贴进去:
+### 把以下LoveIt 主题的基本配置粘贴进去:（打开内收代码TOML）
 
 ```toml
 baseURL = "http://example.org/"
