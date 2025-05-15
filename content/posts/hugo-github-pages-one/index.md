@@ -141,6 +141,86 @@ comments: false
 ## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
 ![](1.png)
 ![](17.png)
+### 打开myblog根目录的hugo.toml删除原有配置
+### 把以下LoveIt 主题的基本配置粘贴进去:
+
+```toml
+baseURL = "http://example.org/"
+
+# 更改使用 Hugo 构建网站时使用的默认主题
+theme = "LoveIt"
+
+# 网站标题
+title = "我的全新 Hugo 网站"
+
+# 网站语言, 仅在这里 CN 大写 ["en", "zh-CN", "fr", "pl", ...]
+languageCode = "zh-CN"
+# 语言名称 ["English", "简体中文", "Français", "Polski", ...]
+languageName = "简体中文"
+# 是否包括中日韩文字
+hasCJKLanguage = true
+
+# 菜单配置
+[menu]
+  [[menu.main]]
+    weight = 1
+    identifier = "posts"
+    # 你可以在名称 (允许 HTML 格式) 之前添加其他信息, 例如图标
+    pre = ""
+    # 你可以在名称 (允许 HTML 格式) 之后添加其他信息, 例如图标
+    post = ""
+    name = "文章"
+    url = "/posts/"
+    # 当你将鼠标悬停在此菜单链接上时, 将显示的标题
+    title = ""
+  [[menu.main]]
+    weight = 2
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "标签"
+    url = "/tags/"
+    title = ""
+  [[menu.main]]
+    weight = 3
+    identifier = "categories"
+    pre = ""
+    post = ""
+    name = "分类"
+    url = "/categories/"
+    title = ""
+
+# Hugo 解析文档的配置
+[markup]
+  # 语法高亮设置 (https://gohugo.io/content-management/syntax-highlighting)
+  [markup.highlight]
+    # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
+    noClasses = false
+```
+## 6.创建你的第一篇文章
+
+### 以下是创建第一篇文章的方法:
+
+```bash
+hugo new posts/first_post.md
+```
+
+![](18.png)
+{{< admonition note "注意" >}}
+但是默认情况下, 所有文章和页面均作为草稿创建. 如果想要渲染这些页面, 请从元数据中删除属性 `draft: true`, 设置属性 `draft: false`
+{{< /admonition >}}
+![](19.png)
+## 7.在本地启动网站
+
+### 使用以下命令启动网站:hugo本地运行默认为1313端口
+
+```bash
+hugo serve
+```
+
+### 浏览器搜索 `http://localhost:1313`.
+# 🎉恭喜你开启了你的Hugo Blog
+![](20.png)
 **加粗文本** 用于强调重点内容，*斜体文本* 用于表达不同的语气。
 
 1. 有序列表项1

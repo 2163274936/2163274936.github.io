@@ -233,7 +233,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
     #  自定义内容 (支持 HTML 格式)
 
-    custom = 'Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。'
+    custom = 'Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱:villioncps7@gmail.com。'
 
     #  是否显示 Hugo 和主题信息
 
