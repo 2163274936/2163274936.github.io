@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Hugo on 维利翁的Hugo Blog</title><link>https://2163274936.github.io/tags/hugo/</link><description>Recent content in Hugo on 维利翁的Hugo Blog</description><generator>Hugo</generator><language>zh-CN</language><copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright><lastBuildDate>Sat, 17 May 2025 23:58:24 +0800</lastBuildDate><atom:link href="https://2163274936.github.io/tags/hugo/index.xml" rel="self" type="application/rss+xml"/><item><title>Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（一）</title><link>https://2163274936.github.io/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</link><pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate><guid>https://2163274936.github.io/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/</guid><description>&lt;h1 id="hugo--github-pages-是什么">Hugo + GitHub Pages 是什么？&lt;/h1>
+&lt;p>这是将 &lt;strong>Hugo 静态网站生成器&lt;/strong> 和 &lt;strong>GitHub Pages 静态网页托管平台&lt;/strong> 相结合，用来搭建一个&lt;strong>快速、安全、免费的博客或网站&lt;/strong>的组合方案。最后通过Cloudflare配置CNAME 指向 GitHub Pages。确保你能够通过自定义域名访问你的 GitHub Pages 托管的博客。&lt;/p>
+&lt;h2 id="我们需要准备什么">我们需要准备什么？&lt;/h2>
+&lt;ul>
+&lt;li>
+&lt;p>安装 Hugo网站生成器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>安装Git Bash 命令行工具&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>通过阿里云万网购买域名（可选）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>创建Github 账号并且搭建public仓库获得github免费三级域名,设置仓库自定义域名(可选)&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>使用&lt;code>git push&lt;/code> 命令用于将本地 Git 仓库的提交（commit）推送到远程Github仓库&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>创建Cloudflare 账号，添加自定义域名通过Free套餐配置 DNS（CNAME 指向 GitHub Pages）&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>配置GitHub Actions（CI/CD 自动工作流） 自动部署博客&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>使用使用黑曜石（Obsidian）等md笔记工具来写博客文章，配置git插件自动推送
+&lt;div class="details admonition note open">
+ &lt;div class="details-summary admonition-title">
+ &lt;i class="icon fas fa-pencil-alt fa-fw" aria-hidden="true">&lt;/i>软件官网&lt;i class="details-icon fas fa-angle-right fa-fw" aria-hidden="true">&lt;/i>
+ &lt;/div>
+ &lt;div class="details-content">
+ &lt;div class="admonition-content">&lt;ul>
+&lt;li>
+&lt;p>&lt;a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener noreffer ">Hugo-GitHub网站&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://git-scm.com/downloads" target="_blank" rel="noopener noreffer ">Git Bash&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://wanwang.aliyun.com/" target="_blank" rel="noopener noreffer ">万网&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://www.cloudflare.com/zh-cn/" target="_blank" rel="noopener noreffer ">CloudFlare&lt;/a>&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;a href="https://obsidian.md/download" target="_blank" rel="noopener noreffer ">obsidian&lt;/a>&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;/div>
+ &lt;/div>
+ &lt;/div>&lt;/p>
+&lt;h2 id="什么是-hugo">什么是 Hugo？&lt;/h2>
+&lt;h3 id="hugo-是一种静态网站生成器">Hugo 是一种&lt;strong>静态网站生成器&lt;/strong>&lt;/h3>
+&lt;/li>
+&lt;li>
+&lt;p>使用 Go 语言开发，&lt;strong>速度极快（毫秒级构建）&lt;/strong>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>不需要数据库，仅通过 Markdown 文件构建网页。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>通过命令一键将 Markdown 文章转换为 HTML 静态页面。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>支持主题系统、标签分类、文章分页、目录自动生成、RSS、SEO、短代码等博客功能。&lt;/p>
+&lt;h2 id="什么是-github-pages">什么是 GitHub Pages？&lt;/h2>
+&lt;/li>
+&lt;/ul>
+&lt;h3 id="github-pages-是-github-提供的静态网页托管服务">GitHub Pages 是 GitHub 提供的&lt;strong>静态网页托管服务&lt;/strong>&lt;/h3>
+&lt;ul>
+&lt;li>
+&lt;p>每个 GitHub 用户或组织都可以免费部署一个网站。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>只要将 HTML、CSS、JS 等静态文件推送到特定分支（如 &lt;code>gh-pages&lt;/code>），GitHub 会&lt;strong>自动托管并部署&lt;/strong>你的网站。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>支持自定义域名（绑定你自己的 .com/.cn 域名）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>默认启用 HTTPS 安全加密，适合搜索引擎抓取。&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="什么是-cloudflare">什么是 Cloudflare？&lt;/h2>
+&lt;h3 id="cloudflare-是全球最大的-cdn-和-dns-服务提供商之一">Cloudflare 是全球最大的 CDN 和 DNS 服务提供商之一&lt;/h3>
+&lt;p>&lt;strong>Cloudflare 最关键、最实用的功能之一就是支持&lt;/strong> ✅ &lt;strong>自定义域名绑定&lt;/strong>&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>提供DNS服务，Cloudflare 免费提供超快的域名解析服务（极稳定）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>提供HTTPS证书 ，自动为你的自定义域名配置 HTTPS（支持自动续期）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>提供智能缓存，为你的域名加速内容访问（CDN 全球缓存）。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>域名跳转，可将 &lt;code>yourdomain.com&lt;/code> → &lt;code>www.yourdomain.com&lt;/code>。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>等等功能&lt;/p>
+&lt;/li>
+&lt;/ul>
+&lt;h2 id="三者结合是如何工作的">三者结合是如何工作的？&lt;/h2>
+&lt;ol>
+&lt;li>
+&lt;p>&lt;strong>选择静态博客生成器 Hugo&lt;/strong>：用于构建博客内容。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>选择 GitHub Pages 托管博客&lt;/strong>：托管静态文件，免费提供 GitHub Pages 部署。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>使用 Git 进行版本控制&lt;/strong>：管理博客源代码和文章更新。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>配置 GitHub Actions 自动化部署&lt;/strong>：每次推送内容时自动构建并部署。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>**使用 Cloudflare CNAME 指向 GitHub Pages，跳转自定义域名。&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;strong>使用 Obsidian 撰写博客文章&lt;/strong>：本地编辑 Markdown 文件，提升写作效率。&lt;/p>
+&lt;/li>
+&lt;/ol>
+&lt;h1 id="正式教程">正式教程：&lt;/h1></description></item></channel></rss>
