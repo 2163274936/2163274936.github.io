@@ -1,5 +1,5 @@
 ---
-title: Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客
+title: Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（一）
 author: 维利翁
 date: 2025-05-11T00:00:00+08:00
 lastmod: 2025-05-11T00:00:00+08:00
