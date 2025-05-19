@@ -464,7 +464,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
     # 是否使用 lightgallery
 
-    lightgallery = false
+    lightgallery = true
 
     #  是否使用 ruby 扩展语法
 
