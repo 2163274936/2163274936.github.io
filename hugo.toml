@@ -237,7 +237,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
     #  是否显示 Hugo 和主题信息
 
-    hugo = true
+    hugo = false
 
     #  是否显示版权信息
 
