@@ -399,7 +399,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       # 主页显示的网站副标题 (允许 HTML 格式)
 
-      subtitle = "Villion's Hugo Blog"
+      subtitle = "小维 Hugo 博客"
 
       # 是否为副标题显示打字机动画
 
