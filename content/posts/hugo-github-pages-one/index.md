@@ -14,6 +14,7 @@ featuredImage: /rbl.png
 showSummary: true
 draft: false
 comments: false
+lightgallery: "true"
 ---
 
 # Hugo + GitHub Pages 是什么？

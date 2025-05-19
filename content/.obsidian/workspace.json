@@ -166,7 +166,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 204.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -180,8 +180,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "d8861df46df13346",
+  "active": "c80fcc9dace1e93b",
   "lastOpenFiles": [
+    "posts/hugo-switchport-mode",
     "posts/hugo-github-pages-one/20.png",
     "posts/hugo-github-pages-one/19.png",
     "posts/hugo-github-pages-one/18.png",
