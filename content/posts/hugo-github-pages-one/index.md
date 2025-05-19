@@ -14,7 +14,7 @@ featuredImage: /rbl.png
 showSummary: true
 draft: false
 comments: false
-lightgallery: "true"
+lightgallery: true
 ---
 
 # Hugo + GitHub Pages 是什么？
@@ -38,7 +38,8 @@ lightgallery: "true"
 - 配置GitHub Actions（CI/CD 自动工作流） 自动部署博客
 
 - 使用使用黑曜石（Obsidian）等md笔记工具来写博客文章，配置git插件自动推送
-{{< admonition note "软件官网" >}}
+  {{< admonition note "软件官网" >}}
+
 - [Hugo-GitHub网站](https://github.com/gohugoio/hugo)
 
 - [Git Bash](https://git-scm.com/downloads)
@@ -48,7 +49,8 @@ lightgallery: "true"
 - [CloudFlare](https://www.cloudflare.com/zh-cn/)
 
 - [obsidian](https://obsidian.md/download)
-{{< /admonition >}}
+  {{< /admonition >}}
+  
   ## 什么是 Hugo？
   
   ### Hugo 是一种**静态网站生成器**
@@ -102,47 +104,78 @@ lightgallery: "true"
 5. **使用 Cloudflare CNAME 指向 GitHub Pages，跳转自定义域名。
 
 6. **使用 Obsidian 撰写博客文章**：本地编辑 Markdown 文件，提升写作效率。
-# 正式教程：
-<!--more-->
-## 1. 安装[Git Bash](https://git-scm.com/downloads). 一路默认Next不用任何更改
+   
+   # 正式教程：
+   
+   <!--more-->
+   
+   ## 1. 安装[Git Bash](https://git-scm.com/downloads). 一路默认Next不用任何更改
 
 ![](11.png)
+
 ### 在cmd中输入  git --version 若有版本号即安装成功
+
 ![](2.png)
+
 ### 没有版本回显就在Path变量中增加：C:\Program Files\Git\cmd
+
 ![](3.png)
+
 ## 2. 部署Hugo
+
 ### 打开[Hugo-GitHub网站](https://github.com/gohugoio/hugo)下载发行版压缩包
+
 ![](4.png)
+
 ### 选择extended_windows
+
 ![](5.png)
+
 ### 我解压到了D盘hugo
+
 ![](6.png)
+
 ### 将 Hugo 的可执行文件所在目录添加到系统的`PATH`环境变量后，可在任意目录下使用`hugo`命令
+
 ![](7.png)
 ![](8.png)
 ![](9.png)
+
 ### 可能需要重启生效，在cmd中输入  ```hugo version``` 若有版本号即安装成功
 
 ![](10.png)
+
 ## 3. 安装Hugo博客站点
+
 ### 打开cmd，进入你希望创建blog的目录，然后输入`hugo new site blog`，其中`blog`是你为博客取的名字，可以根据自己的喜好修改。执行该命令后，Hugo 会创建必要的配置文件和文件夹，并提示你输入一些站点信息，如站点标题、描述等。
+
 {{< admonition note "例子" >}}
 这里我想放在E盘,名字就叫myblog
 {{< /admonition >}}
 ![](12.png)
+
 ## 4.初始化 Git
+
 ### 进入新创建的站点目录，运行`git init`命令进行初始化，将该目录初始化为一个 Git 仓库，以便后续进行版本控制和部署。
+
 ![](13.png)
+
 ## 5.选择和配置主题
+
 ## 这里我个人使用Loveit主题 作者github:https://github.com/dillonzq/LoveIt 感谢作者Dillon提供
+
 ## 我习惯直接去github手动下载主题压缩包[Loveit](https://github.com/dillonzq/LoveIt)
+
 ![](14.png)
   ![](16.png)
+
 ## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
+
 ![](1.png)
 ![](17.png)
+
 ### 打开myblog根目录的hugo.toml删除原有配置
+
 ### 把以下LoveIt 主题的基本配置粘贴进去:（打开内收代码TOML）
 
 ```toml
@@ -198,6 +231,7 @@ hasCJKLanguage = true
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
 ```
+
 ## 6.创建你的第一篇文章
 
 ### 以下是创建第一篇文章的方法:
@@ -211,6 +245,7 @@ hugo new posts/first_post.md
 但是默认情况下, 所有文章和页面均作为草稿创建. 如果想要渲染这些页面, 请从元数据中删除属性 `draft: true`, 设置属性 `draft: false`
 {{< /admonition >}}
 ![](19.png)
+
 ## 7.在本地启动网站
 
 ### 使用以下命令启动网站:hugo本地运行默认为1313端口
@@ -220,11 +255,7 @@ hugo serve
 ```
 
 ### 浏览器搜索 `http://localhost:1313`.
+
 # 🎉恭喜你开启了你的Hugo Blog
+
 ![](20.png)
-
-
-
-
-
-
