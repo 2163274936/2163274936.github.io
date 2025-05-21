@@ -27,7 +27,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-github-pages-one/index.md",
+                "file": "posts/hugo-github-pages-two/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -197,8 +197,8 @@
   },
   "active": "03b9219d21756970",
   "lastOpenFiles": [
-    "posts/hugo-github-pages-two/index.md",
     "posts/hugo-github-pages-one/index.md",
+    "posts/hugo-github-pages-two/index.md",
     "posts/hugo-github-pages-two/3.png",
     "posts/hugo-github-pages-two/2.png",
     "posts/hugo-github-pages-two/1.png",
