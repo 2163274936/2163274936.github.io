@@ -38,10 +38,13 @@ lightgallery: true
 ![](2.png)
 这里我建立了一个test仓库用于演示
 ![](4.png)
-## **部署至 GitHub Pages**
+## **部署至 GitHub Pages**：
 
 ### 自动化部署
         - 在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
+这里的自动化并不是push自动化 而是在每次git push后将原本需要
+手动部署这个过程：`hugo` 构建静态文件 → 将 `public` 目录内容手动推送到 `gh-pages` 分支。
+自动化部署通过 Actions 脚本，将上述步骤封装为自动流程，无需每次手动操作。
 
 ![](5.png)
 ![](6.png)
@@ -218,3 +221,30 @@ git push -u origin main
 ![](13.png)
 拉到最下面 点击read and write 给予Workflow(工作流)读写权限 别忘了“save”保存
 ![](14.png)
+## 通过黑曜石（Obsidian）来更新hugo blog 文章并添加Git插件一键git push：
+使用黑曜石（Obsidian）来更新 Hugo 博客的原因主要与其独特的笔记管理能力、文件兼容性和工作流优势有关。
+
+Hugo 博客本质上是通过 Markdown 文件生成静态页面，而黑曜石的笔记文件天然兼容 Markdown 格式。只需将黑曜石中的笔记导出或直接复制到 Hugo 项目的`content`目录下，即可直接用于博客构建，无需格式转换。
+
+在《Windows 系统中基于 Hugo + GitHub Pages + Cloudflare 搭建个人博客（一）》中，已提及 Obsidian 黑曜石的官方网站，此处不再重复。
+
+我们需要完成以下操作：下载黑曜石，打开软件，添加仓库。
+点击"打开本地仓库" 选择我们D盘下的myblog 里hugo存放文章的content
+![](16.png)
+这就是Obsidian的主界面我们在这里写文章。
+关于如何操作黑曜石我放在后续的分享里，这里不过介绍。
+点击设置按钮 我们要添加git插件
+![](17.png)
+点击 “第三方插件” - 关闭安全模式后可以下载插件
+ ![](18.png)
+ 点击浏览按钮
+ ![](19.png)
+ 搜索Git 第一个就是我们要下载的插件
+ ![](20.png)
+ 安装后点击 '启用'
+ ![](21.png)
+ 这里点击选项有一些自动定时推送 但我个人觉得不一定要配置 手动git push 可能更加安全
+ ![](22.png)
+ 左侧为我们刚下载的插件 右侧为推送的目录 这里Obsidian的git 插件会自动识别的仓库地址 
+ 我们要推送只需要点击向上箭头的按钮 因为我们上面手动初始化了本地仓库并配置了 remote；
+ ![](23.png)![](24.png)

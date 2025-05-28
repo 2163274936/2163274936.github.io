@@ -167,12 +167,12 @@ lightgallery: true
 ## 我习惯直接去github手动下载主题压缩包[Loveit](https://github.com/dillonzq/LoveIt)
 
 ![](posts/hugo-github-pages-one/14.png)
-  ![](16.png)
+  ![](posts/hugo-github-pages-one/16.png)
 
 ## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
 
 ![](posts/hugo-github-pages-one/1.png)
-![](17.png)
+![](posts/hugo-github-pages-one/17.png)
 
 ### 打开myblog根目录的hugo.toml删除原有配置
 
@@ -240,11 +240,11 @@ hasCJKLanguage = true
 hugo new posts/first_post.md
 ```
 
-![](18.png)
+![](posts/hugo-github-pages-one/18.png)
 {{< admonition note "注意" >}}
 但是默认情况下, 所有文章和页面均作为草稿创建. 如果想要渲染这些页面, 请从元数据中删除属性 `draft: true`, 设置属性 `draft: false`
 {{< /admonition >}}
-![](19.png)
+![](posts/hugo-github-pages-one/19.png)
 
 ## 7.在本地启动网站
 
@@ -258,4 +258,4 @@ hugo serve
 
 # 🎉恭喜你开启了你的Hugo Blog
 
-![](20.png)
+![](posts/hugo-github-pages-one/20.png)
