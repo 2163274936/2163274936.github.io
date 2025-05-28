@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "bd240843969fdcdd",
+        "id": "0755ce5368d74719",
         "type": "tabs",
         "children": [
           {
-            "id": "03b9219d21756970",
+            "id": "dda2b068ca25197a",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -180,10 +180,16 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "03b9219d21756970",
+  "active": "c80fcc9dace1e93b",
   "lastOpenFiles": [
-    "posts/hugo-github-pages-one/index.md",
+    "posts/hugo-github-personal-server/2.png",
     "posts/hugo-github-personal-server/index.md",
+    "posts/hugo-github-personal-server/2.png",
+    "【mini主机新手入坑指南——2025年5月迷你主机推荐合集（含国补）】.md",
+    "posts/hugo-github-pages-one/index.md",
+    "posts/hugo-github-pages-one/11.png",
+    "posts/hugo-github-pages-one/20.png",
+    "posts/hugo-github-personal-server/1.png",
     "posts/hugo-github-pages-two/index.md",
     "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-personal-server.md",
@@ -193,14 +199,9 @@
     "posts/hugo-github-pages-two/2.png",
     "posts/hugo-github-pages-two/1.png",
     "Pasted image 20250521010004.png",
-    "posts/hugo-github-pages-one/11.png",
     "posts/hugo-github-pages-one/12.png",
     "posts/hugo-github-pages-two",
-    "posts/hugo-github-pages-one/20.png",
     "posts/hugo-switchport-mode",
-    "posts/hugo-github-pages-one/19.png",
-    "posts/hugo-github-pages-one/18.png",
-    "20.png",
     "posts/template/template2.md",
     "Pasted.md",
     "posts/hugo-github-pages-one/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",

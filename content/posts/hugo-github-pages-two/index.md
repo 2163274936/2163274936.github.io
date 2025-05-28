@@ -30,8 +30,8 @@ lightgallery: true
 # 正式教程：
 ## 首先需要注册github账号，这里我不做解释。登陆成功后点击左上角“New”新建一个github仓库
 
-![](1.png)
+![](posts/hugo-github-pages-two/1.png)
 ## 这里全部默认只有一点要注意：
 ### 仓库名字必须为==github账号==的用户名也就是username，而不是你的别名。以我的账号为例子 我的用户名(username)是2163274936 ，别名(name)是villion.所以我们的仓库名字应该是2163274936
 ![](3.png)
-![](2.png)
+![](posts/hugo-github-pages-two/2.png)
