@@ -54,7 +54,7 @@
               "type": "search",
               "state": {
                 "query": "",
-                "matchingCase": false,
+                "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
                 "extraContext": false,
@@ -182,10 +182,10 @@
   },
   "active": "03b9219d21756970",
   "lastOpenFiles": [
-    "posts/hugo-github-pages-two/index.md",
-    "posts/hugo-github-personal-server/index.md",
-    "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-pages-one/index.md",
+    "posts/hugo-github-personal-server/index.md",
+    "posts/hugo-github-pages-two/index.md",
+    "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-personal-server.md",
     "posts/hugo-github-personal-server",
     "未命名",
