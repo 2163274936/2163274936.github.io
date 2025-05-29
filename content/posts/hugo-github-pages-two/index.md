@@ -281,3 +281,5 @@ Hugo 博客本质上是通过 Markdown 文件生成静态页面，而黑曜石�
 
 ![](26.png)
 修改完毕后再到黑曜石git 推送就能成功了！
+到这里我们就基本完成了自动化部署，接下来就是自定义域名以及blog美化的介绍。
+我将放在Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（三）中。
