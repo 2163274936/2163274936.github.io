@@ -38,13 +38,25 @@ lightgallery: true
 ![](2.png)
 这里我建立了一个test仓库用于演示
 ![](4.png)
+
 ## **部署至 GitHub Pages**：
 
 ### 自动化部署
         - 在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
-这里的自动化并不是push自动化 而是在每次git push后将原本需要
-手动部署这个过程：`hugo` 构建静态文件 → 将 `public` 目录内容手动推送到 `gh-pages` 分支。
+
+### Hugo.yml 是什么？
+
+Hugo.yml 是 Hugo 静态网站生成器的配置文件，用于存储网站的基本设置（如标题、作者、URL 等）、主题配置、页面参数等，是 Hugo 项目的核心配置文件。
+
+### 为什么选择 gh-pages 分支？
+
+- **GitHub Pages 机制**：GitHub Pages 默认会部署 `gh-pages` 分支或 `master` 分支 `/docs` 目录的内容作为静态网站。
+- **分离源码与部署**：将源码放在主分支（如 `main`），`gh-pages` 专门存放编译后的静态文件，便于管理和持续集成。
+- **社区惯例**：Hugo 等静态站点生成工具常使用此分支存放最终部署文件，符合 GitHub Pages 最佳实践。
+
+这里的自动化并不是push自动化 而是在每次git push后将原本需要手动部署这个过程：`hugo` 构建静态文件 → 将 `public` 目录内容手动推送到 `gh-pages` 分支。
 自动化部署通过 Actions 脚本，将上述步骤封装为自动流程，无需每次手动操作。
+
 
 ![](5.png)
 ![](6.png)
@@ -248,3 +260,18 @@ Hugo 博客本质上是通过 Markdown 文件生成静态页面，而黑曜石�
  左侧为我们刚下载的插件 右侧为推送的目录 这里Obsidian的git 插件会自动识别的仓库地址 
  我们要推送只需要点击向上箭头的按钮 因为我们上面手动初始化了本地仓库并配置了 remote；
  ![](23.png)![](24.png)
+ git push 推送按钮
+ 
+ 但第一次推送后 github pages会报错 
+![](25.png)
+ 解决方案:
+ 
+ **修改 GitHub Pages 部署源**
+ 
+1. 进入仓库的 **Settings > Pages**
+2. 将 **Source** 从 `GitHub Actions` 改为 `Deploy from a branch`
+3. 选择 `gh-pages` 分支（根目录 `/`）
+4. 保存设置后重新触发 Actions 工作流
+
+![](26.png)
+修改完毕后再到黑曜石git 推送就能成功了
