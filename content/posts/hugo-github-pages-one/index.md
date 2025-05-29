@@ -21,6 +21,7 @@ lightgallery: true
 
 这是将 **Hugo 静态网站生成器** 和 **GitHub Pages 静态网页托管平台** 相结合，用来搭建一个**快速、安全、免费的博客或网站**的组合方案。最后通过Cloudflare配置CNAME 指向 GitHub Pages。确保你能够通过自定义域名访问你的 GitHub Pages 托管的博客。
 
+---
 ## 我们需要准备什么？
 
 - 安装 Hugo网站生成器
@@ -38,6 +39,9 @@ lightgallery: true
 - 配置GitHub Actions（CI/CD 自动工作流） 自动部署博客
 
 - 使用使用黑曜石（Obsidian）等md笔记工具来写博客文章，配置git插件自动推送
+
+---
+
   {{< admonition note "软件官网" >}}
 
 - [Hugo-GitHub网站](https://github.com/gohugoio/hugo)
@@ -50,7 +54,7 @@ lightgallery: true
 
 - [obsidian](https://obsidian.md/download)
   {{< /admonition >}}
-  
+---
   ## 什么是 Hugo？
   
   ### Hugo 是一种**静态网站生成器**
@@ -62,7 +66,8 @@ lightgallery: true
 - 通过命令一键将 Markdown 文章转换为 HTML 静态页面。
 
 - 支持主题系统、标签分类、文章分页、目录自动生成、RSS、SEO、短代码等博客功能。
-  
+
+---
   ## 什么是 GitHub Pages？
 
 ### GitHub Pages 是 GitHub 提供的**静态网页托管服务**
@@ -75,6 +80,7 @@ lightgallery: true
 
 - 默认启用 HTTPS 安全加密，适合搜索引擎抓取。
 
+---
 ## 什么是 Cloudflare？
 
 ### Cloudflare 是全球最大的 CDN 和 DNS 服务提供商之一
@@ -91,6 +97,7 @@ lightgallery: true
 
 - 等等功能 
 
+---
 ## 三者结合是如何工作的？
 
 1. **选择静态博客生成器 Hugo**：用于构建博客内容。
@@ -104,7 +111,7 @@ lightgallery: true
 5. **使用 Cloudflare CNAME 指向 GitHub Pages，跳转自定义域名。
 
 6. **使用 Obsidian 撰写博客文章**：本地编辑 Markdown 文件，提升写作效率。
-   
+---
    # 正式教程：
    
    <!--more-->
@@ -123,6 +130,8 @@ lightgallery: true
 
 
 ![](3.png)
+
+---
 
 ## 2. 部署Hugo
 
@@ -155,6 +164,7 @@ lightgallery: true
 
 ![](posts/hugo-github-pages-one/10.png)
 
+---
 ## 3. 安装Hugo博客站点
 
 ### 打开cmd，进入你希望创建blog的目录，然后输入`hugo new site blog`，其中`blog`是你为博客取的名字，可以根据自己的喜好修改。执行该命令后，Hugo 会创建必要的配置文件和文件夹，并提示你输入一些站点信息，如站点标题、描述等。
@@ -165,6 +175,7 @@ lightgallery: true
 
 ![](12.png)
 
+---
 ## 4.初始化 Git
 
 ### 进入新创建的站点目录，运行`git init`命令进行初始化，将该目录初始化为一个 Git 仓库，以便后续进行版本控制和部署。
@@ -172,6 +183,7 @@ lightgallery: true
 
 ![](13.png)
 
+---
 ## 5.选择和配置主题
 
 ## 这里我个人使用Loveit主题 作者github:https://github.com/dillonzq/LoveIt 感谢作者Dillon提供
@@ -246,6 +258,8 @@ hasCJKLanguage = true
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
 ```
+
+---
 ## 6.创建你的第一篇文章
 
 ### 以下是创建第一篇文章的方法:
@@ -262,6 +276,7 @@ hugo new posts/first_post.md
 
 ![](19.png)
 
+---
 ## 7.在本地启动网站
 
 ### 使用以下命令启动网站:hugo本地运行默认为1313端口
@@ -272,6 +287,7 @@ hugo serve
 
 ### 浏览器搜索 `http://localhost:1313`.
 
+---
 # 🎉恭喜你开启了你的Hugo Blog
 
 

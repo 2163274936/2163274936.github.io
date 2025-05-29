@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-github-pages-two/index.md",
+                "file": "posts/hugo-github-pages-one/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -183,8 +183,8 @@
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
     "posts/hugo-switchport-mode/index.md",
-    "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-pages-two/index.md",
+    "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-pages-one/index.md",
     "posts/hugo-github-pages-two/28.png",
     "posts/hugo-github-pages-two/26.png",
