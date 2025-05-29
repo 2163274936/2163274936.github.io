@@ -193,11 +193,7 @@ lightgallery: true
 ### 打开myblog根目录的hugo.toml删除原有配置
 
 ### ==把以下LoveIt 主题的基本配置粘贴进去:（打开内收代码TOML）==
-```markdown
-<details open>
-<summary>点击查看 LoveIt 主题的基本配置</summary>
-
-```yaml
+```toml
 baseURL = "http://example.org/"
 
 # 更改使用 Hugo 构建网站时使用的默认主题
@@ -249,11 +245,7 @@ hasCJKLanguage = true
   [markup.highlight]
     # false 是必要的设置 (https://github.com/dillonzq/LoveIt/issues/158)
     noClasses = false
-</details>
 ```
-
-
-
 ## 6.创建你的第一篇文章
 
 ### 以下是创建第一篇文章的方法:
