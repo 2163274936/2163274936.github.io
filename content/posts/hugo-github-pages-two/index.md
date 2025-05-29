@@ -42,10 +42,7 @@ lightgallery: true
 ---
 
 ## **部署至 GitHub Pages**：
-
-### 自动化部署
-在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
-
+### 配置自动化部署
 ---
 ### Hugo.yml 是什么？
 
@@ -57,23 +54,14 @@ Hugo.yml 是 Hugo 静态网站生成器的配置文件，用于存储网站的�
 - **分离源码与部署**：将源码放在主分支（如 `main`），`gh-pages` 专门存放编译后的静态文件，便于管理和持续集成。
 - **社区惯例**：Hugo 等静态站点生成工具常使用此分支存放最终部署文件，符合 GitHub Pages 最佳实践。
 
-
+**创建工作流文件**具体操作：
+在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
 
 ![](5.png)
 ![](6.png)
 创建hugo.yml 
 
 ![](7.png)
-
----
-
-这里的自动化并不是push自动化 而是在每次git push后将原本需要手动部署这个过程：
-
-`hugo` 构建静态文件 → 将 `public` 目录内容手动推送到 `gh-pages` 分支。
-
-自动化部署通过 Actions 脚本，将上述步骤封装为自动流程，无需每次手动操作。
-
----
 ### **将下面给出的自动化推送代码复制粘贴进去:（打开内收代码TOML）**
 ```toml
 name: Hugo Build and Deploy
