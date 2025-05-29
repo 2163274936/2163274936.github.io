@@ -42,7 +42,7 @@ lightgallery: true
 ## **部署至 GitHub Pages**：
 
 ### 自动化部署
-        - 在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
+在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
 
 ### Hugo.yml 是什么？
 
