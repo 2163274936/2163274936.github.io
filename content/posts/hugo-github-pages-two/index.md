@@ -229,7 +229,7 @@ git push -u origin main
 ![](9.png)
 推送成功后我们回到github仓库 发现文件已经上来了
 ![](11.png)
-但却有一个报错  其实
+但却有一个报错  
 ![](12.png)
 这个错误是由于 GitHub Actions 的默认权限配置导致的。当你使用 `peaceiris/actions-gh-pages@v4` 这个 Action 时，需要确保 GitHub Actions 工作流有权限推送到你的仓库。
 
@@ -237,6 +237,8 @@ git push -u origin main
 ![](13.png)
 拉到最下面 点击read and write 给予Workflow(工作流)读写权限 别忘了“save”保存
 ![](14.png)
+经过上述操作后就可以解决权限报错问题。
+
 ## 通过黑曜石（Obsidian）来更新hugo blog 文章并添加Git插件一键git push：
 使用黑曜石（Obsidian）来更新 Hugo 博客的原因主要与其独特的笔记管理能力、文件兼容性和工作流优势有关。
 
