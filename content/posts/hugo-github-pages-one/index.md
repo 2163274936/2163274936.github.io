@@ -146,14 +146,14 @@ lightgallery: true
 
 ![](7.png)
 
-![](8.png)
+![](posts/hugo-github-pages-one/8.png)
 
-![](9.png)
+![](posts/hugo-github-pages-one/9.png)
 
 ### 可能需要重启生效，在cmd中输入  ```hugo version``` 若有版本号即安装成功
 
 
-![](10.png)
+![](posts/hugo-github-pages-one/10.png)
 
 ## 3. 安装Hugo博客站点
 
