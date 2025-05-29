@@ -192,7 +192,7 @@ lightgallery: true
 
 ### 打开myblog根目录的hugo.toml删除原有配置
 
-### ==把以下LoveIt 主题的基本配置粘贴进去:（打开内收代码TOML）==
+### **把以下LoveIt 主题的基本配置粘贴进去:（打开内收代码TOML）**
 ```toml
 baseURL = "http://example.org/"
 
