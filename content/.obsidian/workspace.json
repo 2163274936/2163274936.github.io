@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-github-pages-two/index.md",
+                "file": "posts/hugo-github-pages-one/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -182,9 +182,10 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
-    "posts/hugo-github-pages-one/index.md",
+    "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-pages-two/index.md",
+    "posts/hugo-github-pages-one/index.md",
     "posts/hugo-github-personal-server/1.png",
     "posts/hugo-github-pages-two/26.png",
     "posts/hugo-github-pages-two/25.png",
@@ -196,7 +197,6 @@
     "posts/hugo-github-pages-two/19.png",
     "posts/hugo-github-pages-two/18.png",
     "【mini主机新手入坑指南——2025年5月迷你主机推荐合集（含国补）】.md",
-    "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-personal-server.md",
     "posts/hugo-github-personal-server",
     "未命名",
