@@ -63,7 +63,7 @@ Hugo.yml 是 Hugo 静态网站生成器的配置文件，用于存储网站的�
 创建hugo.yml 
 
 ![](7.png)
-### ==将下面给出的自动化推送代码复制粘贴进去==
+### ==将下面给出的自动化推送代码复制粘贴进去==:（打开内收代码TOML）
 ```toml
 name: Hugo Build and Deploy
 
