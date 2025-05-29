@@ -43,6 +43,13 @@ lightgallery: true
 
 ## **部署至 GitHub Pages**：
 ### 配置自动化部署
+
+这里的自动化并不是push自动化 而是在每次git push后将原本需要手动部署这个过程：
+
+`hugo` 构建静态文件 → 将 `public` 目录内容手动推送到 `gh-pages` 分支。
+
+自动化部署通过 Actions 脚本，将上述步骤封装为自动流程，无需每次手动操作。
+
 ---
 ### Hugo.yml 是什么？
 
@@ -221,8 +228,7 @@ git commit -m "Initial commit"
 # 5. 推送至 GitHub（若本地是 main 分支）
 git push -u origin main
 ```
-我们也可以看github的教程就在创建仓库的地方 如果一直有报错自行解决
-![](27.png)
+
 ![](8.png)
 ![](10.png)
 ![](9.png)
