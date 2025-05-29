@@ -17,7 +17,7 @@ comments: false
 lightgallery: true
 ---
 ## 在上一章本地运行hugo后我们将它推送到github仓库托管。
-## 为什么要推送到github pages托管？
+## 💻为什么要推送到github pages托管？
 
 - **自定义域名**：GitHub提供免费二级域名，还可以自定义域名跳转增加个人属性
 
