@@ -111,39 +111,49 @@ lightgallery: true
    
    ## 1. 安装[Git Bash](https://git-scm.com/downloads). 一路默认Next不用任何更改
 
-![](posts/hugo-github-pages-one/11.png)
+
+![](11.png)
 
 ### 在cmd中输入  git --version 若有版本号即安装成功
 
-![](posts/hugo-github-pages-one/2.png)
+
+![](2.png)
 
 ### 没有版本回显就在Path变量中增加：C:\Program Files\Git\cmd
 
-![](posts/hugo-github-pages-one/3.png)
+
+![](3.png)
 
 ## 2. 部署Hugo
 
 ### 打开[Hugo-GitHub网站](https://github.com/gohugoio/hugo)下载发行版压缩包
 
-![](posts/hugo-github-pages-one/4.png)
+
+![](4.png)
 
 ### 选择extended_windows
 
-![](posts/hugo-github-pages-one/5.png)
+
+![](5.png)
 
 ### 我解压到了D盘hugo
 
-![](posts/hugo-github-pages-one/6.png)
+
+![](6.png)
 
 ### 将 Hugo 的可执行文件所在目录添加到系统的`PATH`环境变量后，可在任意目录下使用`hugo`命令
 
-![](posts/hugo-github-pages-one/7.png)
-![](posts/hugo-github-pages-one/8.png)
-![](posts/hugo-github-pages-one/9.png)
+
+![](7.png)
+
+![](8.png)
+
+![](9.png)
 
 ### 可能需要重启生效，在cmd中输入  ```hugo version``` 若有版本号即安装成功
 
-![](posts/hugo-github-pages-one/10.png)
+
+![](10.png)
 
 ## 3. 安装Hugo博客站点
 
@@ -152,13 +162,15 @@ lightgallery: true
 {{< admonition note "例子" >}}
 这里我想放在E盘,名字就叫myblog
 {{< /admonition >}}
-![](posts/hugo-github-pages-one/12.png)
+
+![](12.png)
 
 ## 4.初始化 Git
 
 ### 进入新创建的站点目录，运行`git init`命令进行初始化，将该目录初始化为一个 Git 仓库，以便后续进行版本控制和部署。
 
-![](posts/hugo-github-pages-one/13.png)
+
+![](13.png)
 
 ## 5.选择和配置主题
 
@@ -166,13 +178,17 @@ lightgallery: true
 
 ## 我习惯直接去github手动下载主题压缩包[Loveit](https://github.com/dillonzq/LoveIt)
 
-![](posts/hugo-github-pages-one/14.png)
-  ![](posts/hugo-github-pages-one/16.png)
+
+![](14.png)
+  
+![](16.png)
 
 ## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
 
-![](posts/hugo-github-pages-one/1.png)
-![](posts/hugo-github-pages-one/17.png)
+
+![](1.png)
+
+![](17.png)
 
 ### 打开myblog根目录的hugo.toml删除原有配置
 
@@ -240,11 +256,13 @@ hasCJKLanguage = true
 hugo new posts/first_post.md
 ```
 
-![](posts/hugo-github-pages-one/18.png)
+
+![](18.png)
 {{< admonition note "注意" >}}
 但是默认情况下, 所有文章和页面均作为草稿创建. 如果想要渲染这些页面, 请从元数据中删除属性 `draft: true`, 设置属性 `draft: false`
 {{< /admonition >}}
-![](posts/hugo-github-pages-one/19.png)
+
+![](19.png)
 
 ## 7.在本地启动网站
 
@@ -258,4 +276,5 @@ hugo serve
 
 # 🎉恭喜你开启了你的Hugo Blog
 
-![](posts/hugo-github-pages-one/20.png)
+
+![](20.png)
