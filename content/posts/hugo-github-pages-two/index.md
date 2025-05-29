@@ -209,18 +209,21 @@ jobs:
 我们先手动推送一下 看看有没有报错后续再配置自动git推送
 这里大家只需要参考命令 回显不需要看
 ```bash
-# 0. 将本地仓库与远程 GitHub 仓库建立连接
+git branch -M main
+# 1. 将本地仓库与远程 GitHub 仓库建立连接
 git remote add origin git@github.com:2163274936/test.git
-# 1. 添加所有文件到暂存区
+# 2. 添加所有文件到暂存区
 git add .
-
-# 2. 提交到本地仓库（必须执行）
+# 3. 重命名当前所在的分支
+git branch -M main
+# 4. 提交到本地仓库（必须执行）
 git commit -m "Initial commit"
 
-# 3. 推送至 GitHub（若本地是 main 分支）
+# 5. 推送至 GitHub（若本地是 main 分支）
 git push -u origin main
 ```
 我们也可以看github的教程就在创建仓库的地方 如果一直有报错自行解决
+![](27.png)
 ![](8.png)
 ![](10.png)
 ![](9.png)
