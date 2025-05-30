@@ -96,7 +96,7 @@ lightgallery: true
 等待大约10min，待光猫重启完后。我们百度搜索 "ip"
 ![](2.png)
 若本机IP出现为一个A类的公网IP基本上就成功拥有了公网的IPV4地址。
-或者登陆ipw.cn 看一下有没有ipv4
+或者登陆ipw.cn 看一下有没有公网ipv4
 ![](4.png)
 
 这里顺便概要一下IP
