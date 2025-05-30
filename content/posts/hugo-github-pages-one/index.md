@@ -124,12 +124,12 @@ lightgallery: true
 ### 在cmd中输入  git --version 若有版本号即安装成功
 
 
-![](2.png)
+![](posts/hugo-github-pages-one/2.png)
 
 ### 没有版本回显就在Path变量中增加：C:\Program Files\Git\cmd
 
 
-![](3.png)
+![](posts/hugo-github-pages-one/3.png)
 
 ---
 
@@ -198,7 +198,7 @@ lightgallery: true
 ## 把名字改成LoveIt放到我们D盘创建的Hugosite-myblog的themes下面(也就是主题文件夹下面)
 
 
-![](1.png)
+![](posts/hugo-github-pages-one/1.png)
 
 ![](17.png)
 
