@@ -37,7 +37,7 @@ lightgallery: true
 ![](posts/hugo-github-pages-two/3.png)
 ![](posts/hugo-github-pages-two/2.png)
 这里我建立了一个test仓库用于演示
-![](4.png)
+![](posts/hugo-github-pages-two/4.png)
 
 ---
 

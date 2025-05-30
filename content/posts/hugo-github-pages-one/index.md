@@ -138,7 +138,7 @@ lightgallery: true
 ### 打开[Hugo-GitHub网站](https://github.com/gohugoio/hugo)下载发行版压缩包
 
 
-![](4.png)
+![](posts/hugo-github-pages-one/4.png)
 
 ### 选择extended_windows
 
