@@ -148,7 +148,7 @@ lightgallery: true
 ### 我解压到了D盘hugo
 
 
-![](6.png)
+![](posts/hugo-github-pages-one/6.png)
 
 ### 将 Hugo 的可执行文件所在目录添加到系统的`PATH`环境变量后，可在任意目录下使用`hugo`命令
 
