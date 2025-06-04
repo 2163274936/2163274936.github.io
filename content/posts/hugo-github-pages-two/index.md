@@ -64,7 +64,7 @@ Hugo.yml 是 Hugo 静态网站生成器的配置文件，用于存储网站的�
 **创建工作流文件**具体操作：
 在站点根目录创建 `.github/workflows` 目录，添加 YAML 配置文件（ `hugo.yml`），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 `gh-pages` 分支。
 
-![](5.png)
+![](posts/hugo-github-pages-two/5.png)
 ![](6.png)
 创建hugo.yml 
 

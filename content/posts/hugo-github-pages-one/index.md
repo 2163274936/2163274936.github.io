@@ -143,7 +143,7 @@ lightgallery: true
 ### 选择extended_windows
 
 
-![](5.png)
+![](posts/hugo-github-pages-one/5.png)
 
 ### 我解压到了D盘hugo
 
