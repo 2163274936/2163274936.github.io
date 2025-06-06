@@ -68,7 +68,7 @@ Hugo.yml 是 Hugo 静态网站生成器的配置文件，用于存储网站的�
 ![](posts/hugo-github-pages-two/6.png)
 创建hugo.yml 
 
-![](7.png)
+![](posts/hugo-github-pages-two/7.png)
 ### **将下面给出的自动化推送代码复制粘贴进去:（打开内收代码TOML）**
 ```toml
 name: Hugo Build and Deploy
@@ -229,19 +229,19 @@ git commit -m "Initial commit"
 git push -u origin main
 ```
 
-![](8.png)
-![](10.png)
-![](9.png)
+![](posts/hugo-github-pages-two/8.png)
+![](posts/hugo-github-pages-two/10.png)
+![](posts/hugo-github-pages-two/9.png)
 推送成功后我们回到github仓库 发现文件已经上来了
-![](11.png)
+![](posts/hugo-github-pages-two/11.png)
 但却有一个报错  
-![](12.png)
+![](posts/hugo-github-pages-two/12.png)
 这个错误是由于 GitHub Actions 的默认权限配置导致的。当你使用 `peaceiris/actions-gh-pages@v4` 这个 Action 时，需要确保 GitHub Actions 工作流有权限推送到你的仓库。
 
 我们点击settings - Actions - General 
-![](13.png)
+![](posts/hugo-github-pages-two/13.png)
 拉到最下面 点击read and write 给予Workflow(工作流)读写权限 别忘了“save”保存
-![](14.png)
+![](posts/hugo-github-pages-two/14.png)
 经过上述操作后就可以解决权限报错问题。
 ![](28.png)
 

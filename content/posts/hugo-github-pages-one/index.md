@@ -119,7 +119,7 @@ lightgallery: true
    ## 1. 安装[Git Bash](https://git-scm.com/downloads). 一路默认Next不用任何更改
 
 
-![](11.png)
+![](posts/hugo-github-pages-one/11.png)
 
 ### 在cmd中输入  git --version 若有版本号即安装成功
 
@@ -153,7 +153,7 @@ lightgallery: true
 ### 将 Hugo 的可执行文件所在目录添加到系统的`PATH`环境变量后，可在任意目录下使用`hugo`命令
 
 
-![](7.png)
+![](posts/hugo-github-pages-one/7.png)
 
 ![](posts/hugo-github-pages-one/8.png)
 
@@ -173,7 +173,7 @@ lightgallery: true
 这里我想放在E盘,名字就叫myblog
 {{< /admonition >}}
 
-![](12.png)
+![](posts/hugo-github-pages-one/12.png)
 
 ---
 ## 4.初始化 Git
@@ -181,7 +181,7 @@ lightgallery: true
 ### 进入新创建的站点目录，运行`git init`命令进行初始化，将该目录初始化为一个 Git 仓库，以便后续进行版本控制和部署。
 
 
-![](13.png)
+![](posts/hugo-github-pages-one/13.png)
 
 ---
 ## 5.选择和配置主题
@@ -191,7 +191,7 @@ lightgallery: true
 ## 我习惯直接去github手动下载主题压缩包[Loveit](https://github.com/dillonzq/LoveIt)
 
 
-![](14.png)
+![](posts/hugo-github-pages-one/14.png)
   
 ![](16.png)
 
