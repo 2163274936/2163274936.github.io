@@ -257,39 +257,39 @@ Hugo 博客本质上是通过 Markdown 文件生成静态页面，而黑曜石�
 我们需要完成以下操作：下载黑曜石，打开软件，添加仓库。
 点击"打开本地仓库" 选择我们D盘下的myblog 里hugo存放文章的content
 
-![](16.png)
+![](posts/hugo-github-pages-two/16.png)
 
 这就是Obsidian的主界面我们在这里写文章。
 关于如何操作黑曜石我放在后续的分享里，这里不过介绍。
 点击设置按钮 我们要添加git插件
 
-![](17.png)
+![](posts/hugo-github-pages-two/17.png)
 
 点击 “第三方插件” - 关闭安全模式后可以下载插件
 
- ![](18.png)
+ ![](posts/hugo-github-pages-two/18.png)
  
  点击浏览按钮
- ![](19.png)
+ ![](posts/hugo-github-pages-two/19.png)
  
  搜索Git 第一个就是我们要下载的插件
- ![](20.png)
+ ![](posts/hugo-github-pages-two/20.png)
  
  安装后点击「启用」，你就能直接在黑曜石中一键推送，无需再到命令行手动操作。
- ![](21.png)
+ ![](posts/hugo-github-pages-two/21.png)
  
  这里点击选项有一些自动定时推送。但我个人觉得不一定要配置，手动git push 可能更加安全。
- ![](22.png)
+ ![](posts/hugo-github-pages-two/22.png)
  
  左侧为我们刚下载的插件 右侧为推送的目录 这里Obsidian的git 插件会自动识别的仓库地址 
  我们要推送只需要点击向上箭头的按钮 因为我们上面手动初始化了本地仓库并配置了 remote；
- ![](23.png)![](24.png)
+ ![](posts/hugo-github-pages-two/23.png)![](posts/hugo-github-pages-two/24.png)
  箭头所指向的就是 git push 推送按钮
 
 ---
 
  但第一次推送后 github pages会报错 
-![](25.png)
+![](posts/hugo-github-pages-two/25.png)
  解决方案:
  
  **修改 GitHub Pages 部署源**
@@ -299,7 +299,7 @@ Hugo 博客本质上是通过 Markdown 文件生成静态页面，而黑曜石�
 3. 选择 `gh-pages` 分支（根目录 `/`）
 4. 保存设置后重新触发 Actions 工作流
 
-![](26.png)
+![](posts/hugo-github-pages-two/26.png)
 
 ---
 修改完毕后再到黑曜石 Git推送就能成功了！
