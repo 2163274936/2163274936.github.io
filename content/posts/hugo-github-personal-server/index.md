@@ -327,7 +327,7 @@ lightgallery: true
 3. 解压到任意目录（建议：`D:\nginx`）
 
 ### 点击nginx/Windows-1.27.5下载 我安装到了D盘
-![[posts/hugo-github-personal-server/14.png]]
+![](14.png)
 
 ### 解压后目录结构大概是：
 
