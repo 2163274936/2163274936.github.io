@@ -5,6 +5,10 @@ date: 2025-05-28T00:00:00+08:00
 lastmod: 2025-05-28T00:00:00+08:00
 categories:
   - Blog
+  - 私有云
+  - 公网IP
+  - mini主机
+  - 宽带
 tags:
   - mini主机
   - 公网IP
