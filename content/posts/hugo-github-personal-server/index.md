@@ -239,7 +239,7 @@ lightgallery: true
 
 ---
 ### windows键+空格 输入“远程桌面设置”
-![](8.png)
+![](posts/hugo-github-personal-server/8.png)
 ### 打开远程桌面功能 不要勾选“要求设备使用网络级别身份验证”
 ![](9.png)
 ### 公网电脑搭建的过程并不难，但配置基本的网络安全环境至关重要。

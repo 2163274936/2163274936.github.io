@@ -49,4 +49,11 @@ lightgallery: true
 ---
 
 ### 运行框输入 ncpa.cpl 打开"网络连接"
-![](7.png)]]
+
+![](7.png)
+
+---
+
+### 高亮处就是我们新建的LoopBack网卡
+
+![](8.png)
