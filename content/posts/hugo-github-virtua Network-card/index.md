@@ -10,7 +10,7 @@ tags:
   - GithubPages
   - Blog
 description: windows创建virtua Network card
-featuredImage: /d.png
+featuredImage: /f.png
 showSummary: true
 draft: false
 comments: false
