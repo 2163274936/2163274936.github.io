@@ -11,7 +11,7 @@ tags:
   - Blog
 description: 在网络交换机配置中，Access、Hybrid 和 Trunk 是 VLAN（虚拟局域网）端口的三种不同模式，主要用于处理 VLAN 标签和数据帧的转发。
 featuredImage: /d.png
-showSummary: true
+showSummary: false
 draft: false
 comments: false
 lightgallery: true
