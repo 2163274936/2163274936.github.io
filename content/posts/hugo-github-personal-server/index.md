@@ -101,7 +101,7 @@ lightgallery: true
 ![](posts/hugo-github-personal-server/2.png)
 若本机IP出现为一个A类的公网IP基本上就成功拥有了公网的IPV4地址。
 或者登陆ipw.cn 看一下有没有公网ipv4
-![](4.png)
+![](posts/hugo-github-personal-server/4.png)
 
 这里顺便概要一下IP
 
@@ -219,14 +219,14 @@ lightgallery: true
 
 连接上wifi后我们ctrl+R 输入CMD打开命令提示符，查看IP。命令为 -- ipconfig
 
-![](5.png)
+![](posts/hugo-github-personal-server/5.png)
 我们找到无线局域网适配器 WLAN   查看默认网关 这个IP地址一般就为路由器的管理地址。
 我以我家的内网地址为例子 为192.168.0.*  默认网关为 192.168.0.1
 我们打开浏览器 输入 http://192.168.0.1/ 进入路由器后台管理页面
 
 ---
 
-![](6.png)
+![](posts/hugo-github-personal-server/6.png)
 一般路由器背后的贴纸上，会有默认的路由器密码。
 若实在忘记了可以拿个笔去戳路由器背面一个reset的小孔。具体怎么恢复出厂设置大家自行百度。
 我这里给出我家 TP-Link 路由器的设置方法，我相信绝大部分路由器的操作流程都是雷同的。
