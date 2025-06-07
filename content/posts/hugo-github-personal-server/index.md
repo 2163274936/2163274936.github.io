@@ -234,7 +234,7 @@ lightgallery: true
 
 ---
 ### 输入运营商给我们的宽带账号密码，连接后就可以正常连接上网。
-![](7.png)
+![](posts/hugo-github-personal-server/7.png)
 ### 之后我们就可以打开mini主机的RDP远程桌面功能
 
 ---
