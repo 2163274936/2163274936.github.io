@@ -16,9 +16,10 @@ draft: false
 comments: false
 lightgallery: true
 ---
-### 在ENSP软件的使用中，我们会遇到使用mobax等连接工具连接虚拟设备的场景，这时就需要创建一张虚拟网卡。
+ 在ENSP软件的使用中，我们会遇到使用mobax等连接工具连接虚拟设备的场景，这时就需要创建一张虚拟网卡。
 
 ### Windows键+R 打开运行 输入“hdwwix”添加硬件选项
+
 
 ---
 
