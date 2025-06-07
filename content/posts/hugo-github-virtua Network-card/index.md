@@ -14,7 +14,7 @@ featuredImage: /f.png
 showSummary: false
 draft: false
 comments: false
-lightgallery: true
+lightgallery: false
 ---
  在ENSP软件的使用中，我们会遇到使用mobax等连接工具连接虚拟设备的场景，这时就需要创建一张虚拟网卡。
 
