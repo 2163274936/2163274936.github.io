@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-github-virtua Network-card/index.md",
+                "file": "posts/hugo-github-personal-server/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#在ENSP软件的使用中，我们会遇到使用mobax等连接工具连接虚拟设备的场景，这时就需要创建一张虚拟网卡。",
+                "query": "",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,11 +180,11 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "0349b47f4f903218",
+  "active": "dda2b068ca25197a",
   "lastOpenFiles": [
-    "posts/hugo-github-personal-server/index.md",
-    "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-switchport-mode/index.md",
+    "posts/hugo-github-virtua Network-card/index.md",
+    "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-virtua Network-card/8.png",
     "posts/hugo-github-virtua Network-card/7.png",
     "posts/hugo-github-virtua Network-card/6.png",

@@ -101,7 +101,6 @@ lightgallery: true
 ![](posts/hugo-github-personal-server/2.png)
 若本机IP出现为一个A类的公网IP基本上就成功拥有了公网的IPV4地址。
 或者登陆ipw.cn 看一下有没有公网ipv4
-![](posts/hugo-github-personal-server/4.png)
 
 这里顺便概要一下IP
 
