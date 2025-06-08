@@ -8,7 +8,7 @@ categories:
 tags:
   - Blog
 description: Lift is a river
-featuredImage: /river.png
+featuredImage: /m.png
 showSummary: false
 draft: false
 comments: false
