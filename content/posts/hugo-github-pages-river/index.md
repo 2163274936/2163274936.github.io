@@ -14,8 +14,6 @@ draft: false
 comments: false
 lightgallery: true
 ---
-
-
 # 河流有三个维度 长度、深度、宽度
 
 ### 我们对世界的影响力，最后取决于体积。
