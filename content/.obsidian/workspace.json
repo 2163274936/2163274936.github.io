@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hugo-github-Routing-protocol/index.md",
+                "file": "posts/hugo-github-Routing-protocol/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:RoutingProtocols",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -180,18 +180,18 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "c80fcc9dace1e93b",
+  "active": "dda2b068ca25197a",
   "lastOpenFiles": [
-    "posts/hugo-github-Lifeisariver",
     "posts/hugo-github-Lifeisariver/index.md",
+    "posts/hugo-github-Routing-protocol/index.md",
+    "posts/hugo-github-Lifeisariver",
     "posts/hugo-github-pages-one/index.md",
-    "hugo-github-Routing-protocol/index.md",
     "river.png",
     "posts/hugo-switchport-mode/index.md",
     "_about.md",
     "posts/hugo-github-Lifeisariver",
     "未命名.md",
-    "hugo-github-Routing-protocol",
+    "posts/hugo-github-Routing-protocol",
     "posts/hugo-github-personal-server/index.md",
     "hugo-github-",
     "posts/hugo-github-virtua Network-card/index.md",
@@ -219,7 +219,6 @@
     "posts/hugo-github-pages-one",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
-    "posts/images",
     "---.md",
     "about.md",
     "about/about.md"
