@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-switchport-mode/index.md",
+                "file": "posts/hugo-github-e/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -182,12 +182,14 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
+    "posts/hugo-switchport-mode/index.md",
+    "posts/hugo-github-e/index.md",
+    "posts/hugo-github-e",
     "posts/hugo-github-Routing-protocol/index.md",
     "posts/hugo-github-pages-one/index.md",
     "posts/hugo-github-pages-two/index.md",
     "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-river/index.md",
-    "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-github-virtua Network-card/8.png",
     "_about.md",
@@ -215,7 +217,6 @@
     "posts/hugo-github-virtua Network-card",
     "【mini主机新手入坑指南——2025年5月迷你主机推荐合集（含国补）】.md",
     "posts/hugo-github-personal-server.md",
-    "posts/hugo-github-personal-server",
     "Pasted.md",
     "posts/hugo-github-pages-one/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
