@@ -4,8 +4,7 @@ author: 维利翁
 date: 2025-06-09T00:00:00+08:00
 lastmod: 2025-06-09T00:00:00+08:00
 categories:
-  - 分类1
-  - 分类2
+  - Blog
 tags:
   - Blog
 summary: life is a river
