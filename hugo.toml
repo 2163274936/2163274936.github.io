@@ -734,7 +734,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
         siteID = ""
 
-        limit = 5
+        limit = 10
 
         height = ""
 
