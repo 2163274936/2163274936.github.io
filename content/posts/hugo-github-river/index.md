@@ -1,5 +1,5 @@
 ---
-title: 示例文章标题
+title: 人生是一条河
 author: 作者姓名
 date: 2025-05-11T00:00:00+08:00
 lastmod: 2025-05-11T00:00:00+08:00
@@ -9,7 +9,7 @@ categories:
 tags:
   - Blog
 summary: life is a river
-featuredImage: images/your-featured-image.jpg
+featuredImage: /m.png
 showSummary: true
 draft: true
 comments: true
