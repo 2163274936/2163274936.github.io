@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-github-river/index.md",
+                "file": "posts/hugo-github-river/template2 1.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "index"
+              "title": "template2 1"
             }
           }
         ]
@@ -182,8 +182,12 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
-    "hugo-github-Routing-protocol/index.md",
     "posts/hugo-github-river/index.md",
+    "posts/hugo-github-river/template2 1.md",
+    "posts/template/template2.md",
+    "posts/template/template1.md",
+    "_about.md",
+    "hugo-github-Routing-protocol/index.md",
     "posts/hugo-github-river/新建 文本文档.txt",
     "posts/hugo-github-river",
     "posts/新建文件夹",
@@ -193,7 +197,6 @@
     "posts/hugo-github-pages-river",
     "river.png",
     "posts/hugo-switchport-mode/index.md",
-    "_about.md",
     "posts/hugo-github-pages-river",
     "未命名.md",
     "hugo-github-Routing-protocol",
@@ -205,7 +208,6 @@
     "posts/hugo-github-virtua Network-card/6.png",
     "posts/hugo-github-virtua Network-card/5.png",
     "posts/hugo-github-virtua Network-card/4.png",
-    "posts/template/template1.md",
     "posts/hugo-github-virtua Network-card/3.png",
     "posts/hugo-github-virtua Network-card/2.png",
     "posts/hugo-github-personal-server/27.png",
@@ -215,7 +217,6 @@
     "【mini主机新手入坑指南——2025年5月迷你主机推荐合集（含国补）】.md",
     "posts/hugo-github-personal-server.md",
     "posts/hugo-github-personal-server",
-    "posts/template/template2.md",
     "Pasted.md",
     "posts/hugo-github-pages-one/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
