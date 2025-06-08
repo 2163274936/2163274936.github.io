@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "posts/hugo-github-personal-server/index.md",
+                "file": "posts/hugo-github-Life is a river/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -182,9 +182,17 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
+    "river.png",
     "posts/hugo-switchport-mode/index.md",
-    "posts/hugo-github-virtua Network-card/index.md",
+    "posts/hugo-github-Life is a river/index.md",
+    "_about.md",
+    "posts/hugo-github-Routing-protocol/index.md",
+    "posts/hugo-github-Life is a river",
+    "未命名.md",
+    "posts/hugo-github-Routing-protocol",
     "posts/hugo-github-personal-server/index.md",
+    "hugo-github-",
+    "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-github-virtua Network-card/8.png",
     "posts/hugo-github-virtua Network-card/7.png",
     "posts/hugo-github-virtua Network-card/6.png",
@@ -212,11 +220,7 @@
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/Windows基于Hugo + GitHub Pagesda + Cloudflare搭建个人博客.md",
     "posts/images",
-    "posts/新建文件夹",
-    "images",
-    "新建文件夹",
     "---.md",
-    "_about.md",
     "about.md",
     "about/about.md"
   ]
