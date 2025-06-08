@@ -11,8 +11,8 @@ tags:
 summary: life is a river
 featuredImage: /m.png
 showSummary: true
-draft: true
-comments: true
+draft: false
+comments: false
 ---
 # 河流有三个维度 长度、深度、宽度
 
