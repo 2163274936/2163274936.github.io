@@ -9,7 +9,7 @@ tags:
   - Blog
 description: Lift is a river
 featuredImage: /m.png
-showSummary: false
+showSummary: true
 draft: false
 comments: false
 lightgallery: true
