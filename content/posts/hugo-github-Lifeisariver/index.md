@@ -6,8 +6,6 @@ lastmod: 2025-06-09T00:00:00+08:00
 categories:
   - Blog
 tags:
-  - Hugo
-  - GithubPages
   - Blog
 description: Life is a river
 featuredImage: /river.png
