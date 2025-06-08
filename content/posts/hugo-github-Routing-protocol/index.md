@@ -1,13 +1,13 @@
 ---
 title: 路由协议基础
 author: 维利翁
-date: 2025-06-09T00:00:00+08:00
-lastmod: 2025-06-09T00:00:00+08:00
+date: 2025-06-07T00:00:00+08:00
+lastmod: 2025-06-07T00:00:00+08:00
 categories:
   - Blog
 tags:
   - Blog
-description: Fundamentals of Routing Protocols
+summary: Fundamentals of Routing Protocols
 featuredImage: 
 showSummary: true
 draft: false

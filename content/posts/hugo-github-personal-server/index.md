@@ -14,7 +14,7 @@ tags:
   - 公网IP
   - 运营商
   - 私有云
-description: 向电信申请公网 IP，将光猫改为桥接模式，通过路由器 PPPoE 拨号实现设备接入公网。
+summary: 向电信申请公网 IP，将光猫改为桥接模式，通过路由器 PPPoE 拨号实现设备接入公网。
 featuredImage: /e.png
 showSummary: true
 draft: false

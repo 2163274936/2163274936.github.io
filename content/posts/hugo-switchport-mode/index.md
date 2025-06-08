@@ -1,15 +1,15 @@
 ---
 title: 交换机常见端口模式Access、Hybrid、Trunk 区别
 author: 维利翁
-date: 2025-06-08T00:00:00+08:00
-lastmod: 2025-06-08T00:00:00+08:00
+date: 2025-06-07T00:00:00+08:00
+lastmod: 2025-06-07T00:00:00+08:00
 categories:
   - Blog
 tags:
   - Hugo
   - GithubPages
   - Blog
-description: 在网络交换机配置中，Access、Hybrid 和 Trunk 是 VLAN（虚拟局域网）端口的三种不同模式，主要用于处理 VLAN 标签和数据帧的转发。
+summary: 在网络交换机配置中，Access、Hybrid 和 Trunk 是 VLAN（虚拟局域网）端口的三种不同模式，主要用于处理 VLAN 标签和数据帧的转发。
 featuredImage: /d.png
 showSummary: false
 draft: false
