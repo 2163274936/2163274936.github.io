@@ -1,5 +1,5 @@
 ---
-title: 人生是一条河
+title: 路由协议基础
 author: 维利翁
 date: 2025-06-09T00:00:00+08:00
 lastmod: 2025-06-09T00:00:00+08:00
@@ -7,7 +7,7 @@ categories:
   - Blog
 tags:
   - Blog
-description: Lift is a river
+description: Fundamentals of Routing Protocols
 featuredImage: 
 showSummary: false
 draft: false
