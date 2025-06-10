@@ -408,7 +408,7 @@ server {
 
 ---
 ![](24.png)
-![](23.png)
+![](posts/hugo-github-personal-server/23.png)
 
 ---
 ## ✅ 二、生成证书的完整命令

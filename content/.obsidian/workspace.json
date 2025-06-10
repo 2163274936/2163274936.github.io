@@ -74,8 +74,7 @@
               "title": "书签"
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
@@ -181,8 +180,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda2b068ca25197a",
+  "active": "c80fcc9dace1e93b",
   "lastOpenFiles": [
+    "posts/hugo-github-E-commerce/23.png",
     "posts/hugo-github-E-commerce/22.png",
     "posts/hugo-github-E-commerce/22.png",
     "posts/hugo-github-E-commerce/22.png",
@@ -195,7 +195,6 @@
     "posts/hugo-github-E-commerce/index.md",
     "posts/hugo-github-pages-one/index.md",
     "posts/hugo-github-E-commerce/15.png",
-    "posts/hugo-github-E-commerce/14.png",
     "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-engineer/index.md",

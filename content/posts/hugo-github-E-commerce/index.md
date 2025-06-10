@@ -264,7 +264,6 @@ group = nginx
 ![](22.png)
 修改完后重启nginx
 
-
 配置 Nginx 虚拟主机
 编辑 `vim /etc/nginx/conf.d/wordpress.conf`：
 
@@ -298,3 +297,8 @@ nginx -t
 #然后重启 Nginx：
 sudo systemctl restart nginx
 ```
+# 恭喜你到这里就完成了wordpress搭建
+# 我们进入网页图形化安装，打开浏览器输入我们的centos虚拟机ip。进行wordpress设置。
+
+# 点击let's go!
+![](23.png)
