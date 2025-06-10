@@ -24,24 +24,24 @@ lightgallery: true
 
 ---
 
-![](1.png)
+![](posts/hugo-github-virtua%20Network-card/1.png)
 ### 下一步
 
 ---
 
-![](2.png)
+![](posts/hugo-github-virtua%20Network-card/2.png)
 ### 选择手动安装
 
 ---
 
-![](3.png)
+![](posts/hugo-github-virtua%20Network-card/3.png)
 ### 选择网络适配器
 
 ---
 
-![](4.png)
+![](posts/hugo-github-virtua%20Network-card/4.png)
 ### 选择微软的 KM-Test LoopBack
-![](5.png)
+![](posts/hugo-github-virtua%20Network-card/5.png)
 
 ---
 ### 点击下一步进行安装
