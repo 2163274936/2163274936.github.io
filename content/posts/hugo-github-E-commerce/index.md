@@ -250,7 +250,7 @@ sudo chown -R nginx:nginx /usr/share/nginx/html
 sudo chmod -R 777 /usr/share/nginx/html
 ```
 ### 五、配置 PHP 与 Nginx
-编辑 `/etc/php-fpm.d/www.conf`，将：
+编辑 `vim /etc/php-fpm.d/www.conf`，将：
 ```ini
 user = apache
 group = apache
