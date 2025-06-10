@@ -360,5 +360,21 @@ define("FS_CHMOD_FILE", 0777);
 ![](31.png)
 
 # 添加完后就可以正常安装了
-# 点击启用
+# 点击启用后就可以跟着图形化一步步搭建电商平台
 ![](32.png)
+
+
+### 但当我们设置完回到wordpress会发现有一个报错
+### WooCommerce 正常运行所需的一个或多个表缺失，某些功能可能无法正常工作：缺少表：wp_wc_order_product_lookup
+### 这里我们可以手动创建一个
+![](33.png)
+
+```sql
+sudo mysql -u root -p
+
+use wordpress;
+
+CREATE TABLE `wp_wc_order_product_lookup` ( `order_item_id` bigint(20) unsigned NOT NULL, `product_id` bigint(20) unsigned NOT NULL, `variation_id` bigint(20) unsigned NOT NULL DEFAULT 0, `quantity` int(11) NOT NULL DEFAULT 0, `order_id` bigint(20) unsigned NOT NULL, PRIMARY KEY (`order_item_id`), KEY `product_id` (`product_id`), KEY `order_id` (`order_id`), KEY `variation_id` (`variation_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+```
+
+![](34.png)
