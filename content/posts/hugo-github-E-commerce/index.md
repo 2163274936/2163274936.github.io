@@ -187,7 +187,7 @@ sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-7.rpm
 
 ```
 
-安装并启用 PHP 7.4（适配 WordPress 需求）
+安装并启用 PHP 8.1（适配 WordPress 需求）
 ```bash 
 sudo yum-config-manager --enable remi-php81
 
