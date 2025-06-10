@@ -220,7 +220,7 @@ systemctl enable mariadb
 ```bash
 mysql_secure_installation
 ```
-全部回车，全部选n就好
+具体配置看高亮处
 
 ![](21.png)
 
