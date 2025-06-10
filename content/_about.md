@@ -19,6 +19,7 @@ comments: true
 
 
 >  我认为，年轻朋友们至少要做到三点：第一，做一个品行端正的好孩子；第二，做一个乐于助人、能为他人带来价值的人；第三，做一个懂得感恩、心怀感激的人。
+Strive to be a good child who knows how to be grateful
 
 
 ### 感谢您访问我的博客！如果您想交流，请随时与我联系！
