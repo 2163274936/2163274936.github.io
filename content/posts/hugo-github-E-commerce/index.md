@@ -204,7 +204,6 @@ sudo systemctl enable nginx
 
 sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
-
 ```
 ### 三、安装 Mariadb 数据库
 ```bash
@@ -290,7 +289,6 @@ server {
         deny all;
     }
 }
-
 ```
 
 
