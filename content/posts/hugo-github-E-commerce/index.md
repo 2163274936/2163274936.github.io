@@ -378,3 +378,9 @@ CREATE TABLE `wp_wc_order_product_lookup` ( `order_item_id` bigint(20) unsigned 
 ```
 
 ![](34.png)
+
+```bash
+#重启服务
+systemctl restart nginx
+systemctl restart mariadb
+```
