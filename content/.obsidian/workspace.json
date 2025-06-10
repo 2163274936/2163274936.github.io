@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "hugo-github-E-commerce/index.md",
+                "file": "posts/hugo-github-E-commerce/index.md",
                 "mode": "source",
                 "source": false
               },
@@ -180,15 +180,15 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "dda2b068ca25197a",
+  "active": "d8861df46df13346",
   "lastOpenFiles": [
     "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-Routing-protocol/index.md",
     "posts/hugo-switchport-mode/index.md",
-    "hugo-github-E-commerce/index.md",
+    "posts/hugo-github-E-commerce/index.md",
     "posts/hugo-github-engineer/index.md",
     "posts/hugo-github-pages-one/index.md",
-    "hugo-github-E-commerce",
+    "posts/hugo-github-E-commerce",
     "posts/hugo-github-engineer",
     "posts/hugo-github-pages-two/index.md",
     "posts/hugo-github-river/index.md",
