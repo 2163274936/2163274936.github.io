@@ -55,8 +55,7 @@ Wordpress就是一个不错的选择。此前我曾用它搭建过个人博客�
 ---
 # 1.获取Centos7.9 iso镜像文件
 
-这里我们使用阿里云的Centos  iso文件，国内的阿里云镜像下载速度快推荐使用。
-
+如果本地没有centos的iso镜像 我们可以使用阿里云的Centos  iso文件。
  [阿里云Centos7.9开源镜像站](https://mirrors.aliyun.com/centos/7.9.2009/isos/x86_64/)
  
  选择高光处的Centos7_DVD-2009.iso
@@ -300,10 +299,11 @@ sudo systemctl restart nginx
 # 恭喜你到这里就完成了wordpress搭建
 # 我们进入网页图形化安装，打开浏览器输入我们的centos虚拟机ip。进行wordpress设置。
 
-# 点击let's go!
+# 点击现在开始
 ![](23.png)
 
 ![](24.png)
+
 
 ![](25.png)
 
@@ -311,7 +311,7 @@ sudo systemctl restart nginx
 ### 邮箱随便写一个
 ![](26.png)
 
-Log in
+登陆
 
 ![](27.png)
 ### 我们进入wordpress主页面 点击Plugins 插件
