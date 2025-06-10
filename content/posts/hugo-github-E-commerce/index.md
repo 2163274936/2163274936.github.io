@@ -228,7 +228,6 @@ mysql_secure_installation
 创建 WordPress 数据库和用户
 ```bash
 mysql -u root -p
-
 # 在 MariaDB 控制台输入：
 CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost' IDENTIFIED BY '';
@@ -248,25 +247,19 @@ sudo mv wordpress/* html/
 设置文件权限
 
 ```bash
-
 sudo chown -R nginx:nginx /usr/share/nginx/html
-sudo chmod -R 755 /usr/share/nginx/html
-
+sudo chmod -R 777 /usr/share/nginx/html
 ```
 ### 五、配置 PHP 与 Nginx
 编辑 `/etc/php-fpm.d/www.conf`，将：
 ```ini
-
 user = apache
 group = apache
-
 ```
 修改为：
 ```ini
-
 user = nginx
 group = nginx
-
 ```
 
 修改完后重启nginx
