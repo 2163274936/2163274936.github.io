@@ -261,6 +261,7 @@ user = nginx
 group = nginx
 ```
 
+![](22.png)]]
 修改完后重启nginx
 
 
