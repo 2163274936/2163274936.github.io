@@ -133,7 +133,7 @@ vi  /etc/sysconfig/network-scripts/ifcfg-ens33
 
 修改网卡配置文件
 
-![[Pasted image 20250610202052.png]]
+![](16.png)
 ```toml
 BOOTPROTO=static
 ONBOOT=yes
@@ -153,6 +153,48 @@ setenforce 0
 
 然后使用mobax连接虚拟机
 
-![[Pasted image 20250610202341.png]]
+![](17.png)
 
-![[Pasted image 20250610202402.png]]
+![](18.png)
+
+使用curl 命令 下载centos7 阿里云yum源
+curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+![](19.png)
+
+然后下载一个vim看看 有没有配置成功
+yum -y install vim
+
+![](20.png)
+安装成功
+
+# 3.部署Wordpress
+
+### 一、环境初始化与基础配置
+
+```bash
+# 更新系统软件包
+sudo yum update -y
+
+# 安装必要的工具
+yum install -y epel-release yum-utils
+```
+
+### 二、安装 Nginx
+```bash
+#安装nginx
+yum install -y nginx 
+#启动nginx服务
+systemctl start nginx 
+#开启自动启动nginx
+systemctl enable nginx
+```
+### 三、安装 Mariadb 数据库
+```bash
+#安装Mariadb
+yum install -y MariaDB-server MariaDB-client  
+#启动Mariadb服务
+systemctl start mariadb
+#开启自动启动Mariadb
+systemctl enable mariadb
+```

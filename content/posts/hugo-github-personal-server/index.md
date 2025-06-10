@@ -341,7 +341,7 @@ D:\nginx\
 
 ![](posts/hugo-github-personal-server/15.png)
 ### 打开nginx.conf文件
-![](16.png)
+![](posts/hugo-github-personal-server/16.png)
 复制粘贴以下代码
 ```toml
 worker_processes 1;
@@ -438,12 +438,12 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 365
 
 ---
 
-![](17.png)
+![](posts/hugo-github-personal-server/17.png)
 ### windows键+空格 输入“服务”
-![](18.png)
+![](posts/hugo-github-personal-server/18.png)
 ### 找到nginx 修改启动类型为 自动(延长启动)
 
-![](19.png)
+![](posts/hugo-github-personal-server/19.png)
 
 ---
 ### 配置完nignx后我们给主机固定内网静态IP地址，防止意外重启DHCP重新分配 。
@@ -457,7 +457,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 365
 ### 我们在TP-Link应用管理 找到虚拟服务器
 ### 实际就是映射管理 这个功能的名字各大品牌可能有差异 我们耐心找就好 现代路由器肯定有这个功能
 
-![](20.png)
+![](posts/hugo-github-personal-server/20.png)
 
 ---
 ### **为什么要映射两个端口：443 和 你的nginx监听端口**
