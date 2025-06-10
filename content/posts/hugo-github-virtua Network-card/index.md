@@ -9,7 +9,7 @@ tags:
   - 虚拟网卡
   - Windows
   - virtualNetworkCard
-summary: windows创建virtua Network card
+summary: Windows manually creates a virtual network card
 featuredImage: /f.png
 showSummary: true
 draft: false
