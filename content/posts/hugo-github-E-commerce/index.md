@@ -232,7 +232,7 @@ mysql -u root -p
 
 # 在 MariaDB 控制台输入：
 CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
-GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost' IDENTIFIED BY 'StrongPassword123!';
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost' IDENTIFIED BY '';
 FLUSH PRIVILEGES;
 EXIT;
 
