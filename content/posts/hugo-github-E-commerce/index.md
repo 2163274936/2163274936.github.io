@@ -158,12 +158,13 @@ setenforce 0
 ![](18.png)
 
 使用curl 命令 下载centos7 阿里云yum源
-curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
+
+### curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 
 ![](19.png)
 
 然后下载一个vim看看 有没有配置成功
-yum -y install vim
+### yum -y install vim
 
 ![](20.png)
 安装成功
