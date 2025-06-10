@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_about.md",
+                "file": "posts/hugo-github-E-commerce/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_about"
+              "title": "index"
             }
           }
         ]
@@ -182,11 +182,12 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
+    "posts/hugo-github-engineer/index.md",
+    "_about.md",
     "posts/hugo-github-E-commerce/index.md",
     "posts/hugo-github-personal-server/index.md",
     "posts/hugo-github-Routing-protocol/index.md",
     "posts/hugo-switchport-mode/index.md",
-    "posts/hugo-github-engineer/index.md",
     "posts/hugo-github-pages-one/index.md",
     "posts/hugo-github-E-commerce",
     "posts/hugo-github-engineer",
@@ -194,7 +195,6 @@
     "posts/hugo-github-river/index.md",
     "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-github-virtua Network-card/8.png",
-    "_about.md",
     "posts/template/template2.md",
     "posts/template/template1.md",
     "posts/hugo-github-river/新建 文本文档.txt",
