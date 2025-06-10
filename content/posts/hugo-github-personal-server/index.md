@@ -240,24 +240,24 @@ lightgallery: true
 ### windows键+空格 输入“远程桌面设置”
 ![](posts/hugo-github-personal-server/8.png)
 ### 打开远程桌面功能 不要勾选“要求设备使用网络级别身份验证”
-![](9.png)
+![](posts/hugo-github-personal-server/9.png)
 ### 公网电脑搭建的过程并不难，但配置基本的网络安全环境至关重要。
 ### 这里我们需要修改 RDP 默认的 3389 端口号，因为这个默认端口号的风险太大，很容易被暴力攻击或扫描。
 
 ---
 ### windows键+空格 输入“regedit”进入注册表编辑器
-![](10.png)
+![](posts/hugo-github-personal-server/10.png)
 
 ### 输入 “计算机\HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp”
-![](11.png)
+![](posts/hugo-github-personal-server/11.png)
 ### 往下拉找到 PortNumber 
-![](12.png)
+![](posts/hugo-github-personal-server/12.png)
 ### 点击修改 然后切换到10进制.这里数据数值修改为我们要的端口号
 ### 范围为 0-65535，写一个和3389不一样的就好
-![](13.png)
+![](posts/hugo-github-personal-server/13.png)
 ### 修改完后注册表即使保存，我们重启电脑就好
 ### 重启完后再到远程桌面设置里打开RDP功能，再检查rdp的端口号有没有正确修改。
-![](9.png)
+![](posts/hugo-github-personal-server/9.png)
 
 ---
 
@@ -326,7 +326,7 @@ lightgallery: true
 3. 解压到任意目录（建议：`D:\nginx`）
 
 ### 点击nginx/Windows-1.27.5下载 我安装到了D盘
-![](14.png)
+![](posts/hugo-github-personal-server/14.png)
 
 ### 解压后目录结构大概是：
 

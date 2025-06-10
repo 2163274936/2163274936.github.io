@@ -45,18 +45,18 @@ lightgallery: true
 
 ---
 ### 点击下一步进行安装
-![](6.png)
+![](posts/hugo-github-virtua%20Network-card/6.png)
 ### 安装完重启一下电脑才有
 
 ---
 
 ### 运行框输入 ncpa.cpl 打开"网络连接"
 
-![](7.png)
+![](posts/hugo-github-virtua%20Network-card/7.png)
 
 
 ---
 
 ### 高亮处就是我们新建的LoopBack网卡
 
-![](8.png)
+![](posts/hugo-github-virtua%20Network-card/8.png)
