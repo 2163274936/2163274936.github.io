@@ -227,7 +227,6 @@ mysql_secure_installation
 
 创建 WordPress 数据库和用户
 ```bash
-
 mysql -u root -p
 
 # 在 MariaDB 控制台输入：
@@ -235,7 +234,6 @@ CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_
 GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost' IDENTIFIED BY '';
 FLUSH PRIVILEGES;
 EXIT;
-
 ```
 ### 四、下载并部署 WordPress
 
@@ -245,7 +243,6 @@ cd /usr/share/nginx/
 sudo curl -O https://wordpress.org/latest.tar.gz
 sudo tar -zxvf latest.tar.gz
 sudo mv wordpress/* html/
-
 ```
 
 设置文件权限
