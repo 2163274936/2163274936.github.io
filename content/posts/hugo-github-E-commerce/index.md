@@ -55,7 +55,7 @@ Wordpress就是一个不错的选择。此前我曾用它搭建过个人博客�
 ---
 # 1.获取Centos7.9 iso镜像文件
 
-如果本地没有centos的iso镜像 我们可以使用阿里云的Centos  iso文件。
+如果本地没有centos的iso镜像，我们可以使用阿里云的Centos  iso文件。
  [阿里云Centos7.9开源镜像站](https://mirrors.aliyun.com/centos/7.9.2009/isos/x86_64/)
  
  选择高光处的Centos7_DVD-2009.iso
