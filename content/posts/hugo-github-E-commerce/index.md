@@ -292,7 +292,9 @@ server {
 }
 ```
 
-
-然后重启 Nginx：
+```bash
+#检查是否有nginx配置错误
+nginx -t
+#然后重启 Nginx：
 sudo systemctl restart nginx
-
+```
