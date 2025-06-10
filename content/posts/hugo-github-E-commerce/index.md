@@ -196,14 +196,11 @@ sudo yum install -y php php-mysqlnd php-fpm php-xml php-mbstring php-curl php-js
 
 ### 二、安装 Nginx 和 MariaDB
 ```bash
-sudo yum install -y nginx mariadb-server
+sudo yum install -y nginx 
 
 #启动服务并设置开机自启
 sudo systemctl start nginx
 sudo systemctl enable nginx
-
-sudo systemctl start mariadb
-sudo systemctl enable mariadb
 
 sudo systemctl start php-fpm
 sudo systemctl enable php-fpm
