@@ -407,7 +407,7 @@ server {
 - 记住路径，后面需要用命令行进入这个目录
 
 ---
-![](24.png)
+![](posts/hugo-github-personal-server/24.png)
 ![](posts/hugo-github-personal-server/23.png)
 
 ---
@@ -421,7 +421,7 @@ openssl genrsa -out key.pem 2048
 openssl req -new -x509 -key key.pem -out cert.pem -days 365
 ### 执行后会提示你填写一些信息，除了**Common Name全部回车即可，例如：
 
-![](25.png)
+![](posts/hugo-github-personal-server/25.png)
 ### ✅ 特别注意：**Common Name（CN）一定要写你的域名：否则浏览器/RDP 客户端会报证书名不一致。我图中由于test就回车了。
 
 # 但我在《迷你主机基于家庭宽带搭建公网服务器 —— 私有云 (一)》并没有介绍DDNS的配置以及花生壳域名的配置，因为我在实际使用中感觉并不好。DDNS部分我将放在《迷你主机基于家庭宽带搭建公网服务器 —— 私有云 (二)》中。
@@ -491,4 +491,4 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 365
 ### 用户名就是电脑本地账户名称
 ### 密码就是我们设置的强密码，大家一定要使用强密码啊避免暴力破解。可以让ai生成一个强密码然后写在纸上什么的。
 
-![](26.png)]]
+![](posts/hugo-github-personal-server/26.png)]]
