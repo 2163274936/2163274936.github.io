@@ -362,7 +362,7 @@ define("FS_CHMOD_FILE", 0777);
 # 添加完后就可以正常安装了
 # 点击启用后就可以跟着图形化一步步搭建电商平台
 ![](32.png)
-
+![](36.png)
 
 ### 但当我们设置完回到wordpress会发现有一个报错
 ### WooCommerce 正常运行所需的一个或多个表缺失，某些功能可能无法正常工作：缺少表：wp_wc_order_product_lookup
@@ -384,4 +384,7 @@ CREATE TABLE `wp_wc_order_product_lookup` ( `order_item_id` bigint(20) unsigned 
 systemctl restart nginx
 systemctl restart mariadb
 ```
-###tian'jia'wa
+### 添加完表后 完美解决
+![](35.png)
+
+# 具体的WooCommerce 商店的搭建美化我将放在Centos7.9通过Wordpress搭建电商平台（二）中分享。

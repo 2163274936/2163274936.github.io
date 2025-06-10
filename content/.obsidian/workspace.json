@@ -53,7 +53,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "tag:#检查是否有nginx配置错误",
+                "query": " ",
                 "matchingCase": true,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -182,6 +182,8 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
+    "posts/hugo-github-E-commerce/36.png",
+    "posts/hugo-github-E-commerce/35.png",
     "posts/hugo-github-E-commerce/34.png",
     "posts/hugo-github-E-commerce/33.png",
     "posts/hugo-github-E-commerce/32.png",
@@ -192,8 +194,6 @@
     "posts/hugo-github-E-commerce/29.png",
     "posts/hugo-github-E-commerce/28.png",
     "posts/hugo-github-E-commerce/27.png",
-    "posts/hugo-github-E-commerce/26.png",
-    "posts/hugo-github-E-commerce/24.png",
     "posts/hugo-github-pages-one/index.md",
     "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-switchport-mode/index.md",
