@@ -339,7 +339,7 @@ D:\nginx\
 ---
 
 
-![](15.png)
+![](posts/hugo-github-personal-server/15.png)
 ### 打开nginx.conf文件
 ![](16.png)
 复制粘贴以下代码

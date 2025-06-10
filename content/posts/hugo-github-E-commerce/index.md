@@ -126,3 +126,33 @@ Wordpress就是一个不错的选择。此前我曾用它搭建过个人博客�
 
 设置一个root密码 然后等待安装成功
 
+
+![](15.png)
+
+vi  /etc/sysconfig/network-scripts/ifcfg-ens33
+
+修改网卡配置文件
+
+![[Pasted image 20250610202052.png]]
+```toml
+BOOTPROTO=static
+ONBOOT=yes
+IPADDR=192.168.143.102
+NETMASK=255.255.255.0
+GATEWAY=192.168.143.2
+DNS1=1.2.4.8
+```
+保存后 重启网卡
+systemctl restart network
+
+关闭防火墙
+systemctl stop firewalld
+
+临时关闭selinux
+setenforce 0
+
+然后使用mobax连接虚拟机
+
+![[Pasted image 20250610202341.png]]
+
+![[Pasted image 20250610202402.png]]
