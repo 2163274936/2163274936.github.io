@@ -314,3 +314,32 @@ sudo systemctl restart nginx
 Log in
 
 ![](27.png)
+### 我们进入wordpress主页面 点击Plugins 插件
+### 点击Add Plugin 添加插件
+![](28.png)
+
+# 我们将使用WooCommerce插件来搭建这个电商平台
+
+---
+### 🔧 WooCommerce 是什么？
+
+WooCommerce 是一个基于 WordPress 的 **开源电商插件**，它可以将一个普通的 WordPress 网站变成一个功能强大的 **在线商店**。简单来说，**WooCommerce 就是 WordPress 的“电商引擎”**。
+
+---
+你可以用它创建一个完整的电商平台，比如：
+
+- 🛍️ 销售实物商品（化妆品、衣服、电子产品等）
+    
+- 📦 销售虚拟商品（下载资源、软件许可证等）
+    
+- 🧾 管理订单、库存和客户
+    
+- 💳 集成各种支付方式（支付宝、微信、PayPal、Stripe、信用卡等）
+    
+- 🚚 设置物流配送方式（顺丰、京东、本地配送、自提点等）
+    
+- 🎯 支持促销、优惠券、会员折扣等
+
+---
+
+![[29.png]]

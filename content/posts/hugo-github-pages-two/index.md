@@ -243,7 +243,7 @@ git push -u origin main
 拉到最下面 点击read and write 给予Workflow(工作流)读写权限 别忘了“save”保存
 ![](posts/hugo-github-pages-two/14.png)
 经过上述操作后就可以解决权限报错问题。
-![](28.png)
+![](posts/hugo-github-pages-two/28.png)
 
 ---
 
