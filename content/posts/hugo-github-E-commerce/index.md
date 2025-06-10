@@ -238,8 +238,8 @@ EXIT;
 下载 WordPress 并解压
 ```bash
 cd /usr/share/nginx/
-sudo curl -O https://wordpress.org/latest.tar.gz
-sudo tar -zxvf latest.tar.gz
+curl -O https://cn.wordpress.org/latest-zh_CN.tar.gz
+sudo tar -zxvf latest-zh_CN.tar.gz
 sudo mv wordpress/* html/
 ```
 
