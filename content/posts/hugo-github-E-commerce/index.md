@@ -345,7 +345,7 @@ WooCommerce 是一个基于 WordPress 的 **开源电商插件**，它可以将�
 ![[29.png]]
 
 ### 但在安装的时候我遇到了这个问题 我搜索了解决方法
-![[30.png]]
+![](30.png)
 
 ---
 编辑 `vim /usr/share/nginx/html/wp-config.php`：
@@ -357,4 +357,8 @@ define("FS_CHMOD_DIR", 0777);
 define("FS_CHMOD_FILE", 0777);
 ```
 
-![[31.png]]
+![](31.png)
+
+# 添加完后就可以正常安装了
+# 点击启用
+![](32.png)
