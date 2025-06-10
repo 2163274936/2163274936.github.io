@@ -266,7 +266,7 @@ group = nginx
 
 
 配置 Nginx 虚拟主机
-编辑 `/etc/nginx/conf.d/wordpress.conf`：
+编辑 `vim /etc/nginx/conf.d/wordpress.conf`：
 
 ```bash
 server {
