@@ -168,33 +168,145 @@ yum -y install vim
 ![](20.png)
 安装成功
 
-# 3.部署Wordpress
+# 1、环境准备：安装 LNMP 组件
 
-### 一、环境初始化与基础配置
+环境初始化与基础配置
 
 ```bash
 # 更新系统软件包
 sudo yum update -y
 
 # 安装必要的工具
-yum install -y epel-release yum-utils
+
+yum install -y wget vim net-tools
+
+sudo yum install -y epel-release yum-utils
+
+sudo yum install -y https://rpms.remirepo.net/enterprise/remi-release-7.rpm
+
 ```
 
-### 二、安装 Nginx
+安装并启用 PHP 7.4（适配 WordPress 需求）
+```bash 
+sudo yum-config-manager --enable remi-php74
+
+sudo yum install -y php php-mysqlnd php-fpm php-xml php-mbstring php-curl php-json php-gd php-zip
+```
+
+### 二、安装 Nginx 和 MariaDB
 ```bash
-#安装nginx
-yum install -y nginx 
-#启动nginx服务
-systemctl start nginx 
-#开启自动启动nginx
-systemctl enable nginx
+sudo yum install -y nginx mariadb-server
+
+#启动服务并设置开机自启
+sudo systemctl start nginx
+sudo systemctl enable nginx
+
+sudo systemctl start mariadb
+sudo systemctl enable mariadb
+
+sudo systemctl start php-fpm
+sudo systemctl enable php-fpm
+
 ```
 ### 三、安装 Mariadb 数据库
 ```bash
 #安装Mariadb
-yum install -y MariaDB-server MariaDB-client  
+yum install -y Mariadb mariadb-server
 #启动Mariadb服务
 systemctl start mariadb
 #开启自动启动Mariadb
 systemctl enable mariadb
 ```
+配置数据库（WordPress使用）
+
+初始化 MariaDB 安全设置
+```bash
+mysql_secure_installation
+```
+全部回车，全部选n就好
+
+![](21.png)
+
+创建 WordPress 数据库和用户
+```bash
+
+mysql -u root -p
+
+# 在 MariaDB 控制台输入：
+CREATE DATABASE wordpress DEFAULT CHARACTER SET utf8mb4 COLLATE utf8mb4_general_ci;
+GRANT ALL PRIVILEGES ON wordpress.* TO 'wpuser'@'localhost' IDENTIFIED BY 'StrongPassword123!';
+FLUSH PRIVILEGES;
+EXIT;
+
+```
+### 四、下载并部署 WordPress
+
+下载 WordPress 并解压
+```bash
+
+cd /usr/share/nginx/
+sudo curl -O https://wordpress.org/latest.tar.gz
+sudo tar -zxvf latest.tar.gz
+sudo mv wordpress/* html/
+
+```
+
+设置文件权限
+
+```bash
+
+sudo chown -R nginx:nginx /usr/share/nginx/html
+sudo chmod -R 755 /usr/share/nginx/html
+
+```
+### 五、配置 PHP 与 Nginx
+编辑 `/etc/php-fpm.d/www.conf`，将：
+```ini
+
+user = apache
+group = apache
+
+```
+修改为：
+```ini
+
+user = nginx
+group = nginx
+
+```
+
+修改完后重启nginx
+
+
+配置 Nginx 虚拟主机
+编辑 `/etc/nginx/conf.d/wordpress.conf`：
+
+```bash
+server {
+    listen 80;
+    server_name your_domain_or_ip;
+
+    root /usr/share/nginx/html;
+    index index.php index.html index.htm;
+
+    location / {
+        try_files $uri $uri/ /index.php?$args;
+    }
+
+    location ~ \.php$ {
+        include fastcgi_params;
+        fastcgi_pass 127.0.0.1:9000;
+        fastcgi_param SCRIPT_FILENAME $document_root$fastcgi_script_name;
+    }
+
+    location ~ /\.ht {
+        deny all;
+    }
+}
+
+```
+
+
+然后重启 Nginx：
+sudo systemctl restart nginx
+

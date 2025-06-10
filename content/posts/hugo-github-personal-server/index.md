@@ -449,7 +449,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 365
 ### 配置完nignx后我们给主机固定内网静态IP地址，防止意外重启DHCP重新分配 。
 ### 我们选个后面一点的IP： 我的是192.168.0.177
 ### 选择使用下面的IP地址，也就是STATIC静态IP以及DNS服务器。
-![](22.png)
+![](posts/hugo-github-personal-server/22.png)
 
 ---
 ### 最后我们回到路由器后台页面，设置最重要的端口映射。
@@ -474,7 +474,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 365
 - **使用 HTTPS**：确保外部连接是加密的，通过端口 443 使用 SSL/TLS 协议。
 
 ### 打码的就是你在nginx.conf 里设置的监听端口，而不是实际的RDP端口
-![](21.png)
+![](posts/hugo-github-personal-server/21.png)
 ## 为什么两个端口都要映射且都是 TCP？
 
 - **RDP 服务是基于 TCP 协议的
