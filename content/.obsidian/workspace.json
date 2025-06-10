@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_about.md",
+                "file": "posts/hugo-github-E-commerce/index.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "_about"
+              "title": "index"
             }
           }
         ]
@@ -182,6 +182,7 @@
   },
   "active": "dda2b068ca25197a",
   "lastOpenFiles": [
+    "_about.md",
     "posts/hugo-switchport-mode/index.md",
     "posts/hugo-github-virtua Network-card/index.md",
     "posts/hugo-github-Routing-protocol/index.md",
@@ -201,7 +202,6 @@
     "posts/hugo-github-E-commerce/30.png",
     "posts/hugo-github-E-commerce/29.png",
     "posts/hugo-github-E-commerce/28.png",
-    "_about.md",
     "posts/hugo-github-E-commerce",
     "posts/hugo-github-engineer",
     "posts/template/template2.md",

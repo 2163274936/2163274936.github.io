@@ -387,4 +387,4 @@ systemctl restart mariadb
 ### 添加完表后 完美解决
 ![](35.png)
 
-# 具体的WooCommerce 商店的搭建美化我将放在Centos7.9通过Wordpress搭建电商平台（二）中分享。
+# 感谢您看到这里。具体的WooCommerce 商店的搭建美化我将放在Centos7.9通过Wordpress搭建电商平台（二）中分享。
