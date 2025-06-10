@@ -484,7 +484,7 @@ openssl req -new -x509 -key key.pem -out cert.pem -days 365
 ### 完成这些后我们做一个收尾工作就是给windows账户设置为本地账户并且设置一个强密码
 ### windows默认都是微软账户登陆，但在实际RDP使用的时候并不方便。大家自行百度更改为本地账户。
 ### 这里我只给出修改密码的地方
-![[27.png]]
+![[posts/hugo-github-personal-server/27.png]]
 ### 终于我们完整了基本的公网电脑的实现。我们在任何一台有互联网的电脑上打开rdp输入我们的当前的公网IP就可以连接了。
 
 ---

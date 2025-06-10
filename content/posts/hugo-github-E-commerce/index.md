@@ -310,3 +310,5 @@ sudo systemctl restart nginx
 ### 这里我们只是教学password可以很简单 但是实际自己使用千万不能用弱密码!
 ### 邮箱随便写一个
 ![](26.png)
+
+![](27.png)
