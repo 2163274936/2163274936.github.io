@@ -594,7 +594,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       Tumblr = false
 
-      HackerNews = true
+      HackerNews = false
 
       Reddit = false
 
@@ -612,7 +612,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       Flipboard = false
 
-      Weibo = true
+      Weibo = false
 
       Blogger = false
 
@@ -626,7 +626,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
 
       Trello = false
 
-      Diaspora = true # 
+      Diaspora = false # 
 
       Mix = false
 
@@ -1129,3 +1129,7 @@ ignoreErrors = ["error-remote-getjson", "error-missing-instagram-accesstoken"]
   section = ["HTML", "RSS"]
 
   taxonomy = ["HTML", "RSS"]
+# 开启 Hugo 的构建优化
+[minify]
+  disableXML = true
+  minifyOutput = true
