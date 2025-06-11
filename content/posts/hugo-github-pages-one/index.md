@@ -10,7 +10,7 @@ tags:
   - GithubPages
   - Blog
 summary: Building a Personal Blog on Windows Based on Hugo + GitHub Pages + Cloudflare (Part One)
-featuredImage: /a.png
+featuredImage: /a.jpg
 showSummary: true
 draft: false
 comments: false

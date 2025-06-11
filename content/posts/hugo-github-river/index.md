@@ -8,7 +8,7 @@ categories:
 tags:
   - Blog
 summary: life is a river
-featuredImage: /m.png
+featuredImage: /m.jpg
 showSummary: true
 draft: false
 comments: false

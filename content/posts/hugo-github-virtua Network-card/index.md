@@ -10,7 +10,7 @@ tags:
   - Windows
   - virtualNetworkCard
 summary: Windows manually creates a virtual network card
-featuredImage: /f.png
+featuredImage: /f.jpg
 showSummary: true
 draft: false
 comments: false

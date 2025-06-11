@@ -8,7 +8,7 @@ categories:
 tags:
   - Blog
 summary: The fifth-level engineer in Dr. Wu Jun's eyes
-featuredImage: /n.png
+featuredImage: /n.jpg
 showSummary: true
 draft: false
 comments: false

@@ -12,7 +12,7 @@ tags:
   - VMWorkstation
   - Centos
 summary: Centos7.9 Building an E-commerce Platform with Wordpress (Part One)
-featuredImage: /l.png
+featuredImage: /l.jpg
 showSummary: true
 draft: false
 comments: false

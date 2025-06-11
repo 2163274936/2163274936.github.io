@@ -10,7 +10,7 @@ tags:
   - GithubPages
   - Blog
 summary: The differences between common port modes of switches such as Access, Hybrid, and Trunk
-featuredImage: /d.png
+featuredImage: /d.jpg
 showSummary: false
 draft: false
 comments: false

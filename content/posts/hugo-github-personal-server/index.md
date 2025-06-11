@@ -15,7 +15,7 @@ tags:
   - 运营商
   - 私有云
 summary: Mini Hosts Build Public Network Servers Based on Home Broadband - Private Cloud (Part One)
-featuredImage: /e.png
+featuredImage: /e.jpg
 showSummary: true
 draft: false
 comments: false
