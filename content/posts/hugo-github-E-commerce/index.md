@@ -193,7 +193,7 @@ sudo yum-config-manager --enable remi-php81
 sudo yum install -y php php-mysqlnd php-fpm php-xml php-mbstring php-curl php-json php-gd php-zip
 ```
 
-### 二、安装 Nginx 和 MariaDB
+### 二、安装 Nginx 
 ```bash
 sudo yum install -y nginx 
 
