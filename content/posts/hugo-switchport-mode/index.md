@@ -95,4 +95,11 @@ Hybrid 端口是介于 Access 与 Trunk 之间的“混合”模式，具有更�
 - 配置的 VLAN 中，部分 VLAN 打标签发送（tagged）
 - 其他 VLAN 不打标签发送（untagged）
 
+---
+## ✅ 总结对比表
 
+|模式|是否支持多个 VLAN|是否打标签|接收 Untagged|典型场景|
+|---|---|---|---|---|
+|Access|否|否|是（PVID）|终端设备（PC、打印机）|
+|Trunk|是|是|是（Native VLAN）|交换机/路由器互连|
+|Hybrid|是|可配置|是（PVID）|无线AP、IP电话等混合场景|
