@@ -60,79 +60,79 @@ Wordpress就是一个不错的选择。此前我曾用它搭建过个人博客�
  
  选择高光处的Centos7_DVD-2009.iso
 
-![](1.png)
+![](posts/hugo-github-E-commerce/1.png)
 
 # 2.通过VM Workstation搭建Centos虚拟机
 
 点击 "创建新的虚拟机"
 
-![](2.png)
+![](posts/hugo-github-E-commerce/2.png)
 
 选择 “典型（推荐）”
 
-![](3.png)
+![](posts/hugo-github-E-commerce/3.png)
 
 选择 “稍后安装操作系统”
 
-![](4.png)
+![](posts/hugo-github-E-commerce/4.png)
 
 客户机操作系统选择Linux（L ） 版本（V）为Centos7 64位
 
-![](5.png)
+![](posts/hugo-github-E-commerce/5.png)
 
 自己自定义一个名字 然后指定虚拟机存放的地方（不要安装到C盘就好）
 
-![](6.png)
+![](posts/hugo-github-E-commerce/6.png)
 
 最大磁盘大小（GB）(S) 修改为 60 稍微大一点
 
-![](7.png)
+![](posts/hugo-github-E-commerce/7.png)
 
 点击自定义硬件
 
-![](8.png)
+![](posts/hugo-github-E-commerce/8.png)
 
 我们修改内存为8GB 处理器 4 
 在新CD/DVD（IDE）指定使用ISO映像文件 指定我们刚下载的阿里云centos7.9 iso
 
 
-![](9.png)
+![](posts/hugo-github-E-commerce/9.png)
 
 在机房的同学需要把网络适配器改为桥接模式，并且勾选复制物理网络连接状态
 
 由于我在寝室我就用Nat模式了
 
-![](10.png)
+![](posts/hugo-github-E-commerce/9.png)
 
 虚拟机到这里就设置完成了 我们点击完成 然后开启虚拟机
 
 在这个页面我们点击键盘 方向↑键 然后回车 选择直接安装centos7 不检查
 
 
-![](11.png)
+![](posts/hugo-github-E-commerce/10.png)
 
 选择简体中文
 
-![](12.png)
+![](posts/hugo-github-E-commerce/1.png)
 
 点击一下安装位置
 
-![](13.png)
+![](posts/hugo-github-E-commerce/11.png)
 
 双击一下这个磁盘然后点击完成
 
-![](14.png)
+![](posts/hugo-github-E-commerce/12.png)
 
 设置一个root密码 然后等待安装成功
 
 
-![](15.png)
+![](posts/hugo-github-E-commerce/13.png)
 
 vi  /etc/sysconfig/network-scripts/ifcfg-ens33
 
 修改网卡配置文件
 
-![](16.png)
+![](posts/hugo-github-E-commerce/14.png)
 ```toml
 BOOTPROTO=static
 ONBOOT=yes
@@ -152,20 +152,20 @@ setenforce 0
 
 然后使用mobax连接虚拟机
 
-![](17.png)
+![](posts/hugo-github-E-commerce/15.png)
 
-![](18.png)
+![](posts/hugo-github-E-commerce/16.png)
 
 使用curl 命令 下载centos7 阿里云yum源
 
 ### curl -o /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-7.repo
 
-![](19.png)
+![](posts/hugo-github-E-commerce/17.png)
 
 然后下载一个vim看看 有没有配置成功
 ### yum -y install vim
 
-![](20.png)
+![](posts/hugo-github-E-commerce/18.png)
 安装成功
 
 # 1、环境准备：安装 LNMP 组件
@@ -221,7 +221,7 @@ mysql_secure_installation
 ```
 具体配置看高亮处
 
-![](21.png)
+![](posts/hugo-github-E-commerce/19.png)
 
 创建 WordPress 数据库和用户
 ```bash
@@ -260,7 +260,7 @@ user = nginx
 group = nginx
 ```
 
-![](22.png)
+![](posts/hugo-github-E-commerce/20.png)
 修改完后重启nginx
 
 配置 Nginx 虚拟主机
@@ -300,23 +300,23 @@ sudo systemctl restart nginx
 # 我们进入网页图形化安装，打开浏览器输入我们的centos虚拟机ip。进行wordpress设置。
 
 # 点击现在开始
-![](23.png)
+![](posts/hugo-github-E-commerce/21.png)
 
-![](24.png)
+![](posts/hugo-github-E-commerce/22.png)
 
 
-![](25.png)
+![](posts/hugo-github-E-commerce/23.png)
 
 ### 这里我们只是教学password可以很简单 但是实际自己使用千万不能用弱密码!
 ### 邮箱随便写一个
-![](26.png)
+![](posts/hugo-github-E-commerce/24.png)
 
 登陆
 
-![](27.png)
+![](posts/hugo-github-E-commerce/25.png)
 ### 我们进入wordpress主页面 点击Plugins 插件
 ### 点击Add Plugin 添加插件
-![](28.png)
+![](posts/hugo-github-E-commerce/26.png)
 
 # 我们将使用WooCommerce插件来搭建这个电商平台
 
@@ -345,7 +345,7 @@ WooCommerce 是一个基于 WordPress 的 **开源电商插件**，它可以将�
 ![[29.png]]
 
 ### 但在安装的时候我遇到了这个问题 我搜索了解决方法
-![](30.png)
+![](posts/hugo-github-E-commerce/30.png)
 
 ---
 编辑 `vim /usr/share/nginx/html/wp-config.php`：
@@ -357,17 +357,17 @@ define("FS_CHMOD_DIR", 0777);
 define("FS_CHMOD_FILE", 0777);
 ```
 
-![](31.png)
+![](posts/hugo-github-E-commerce/31.png)
 
 # 添加完后就可以正常安装了
 # 点击启用后就可以跟着图形化一步步搭建电商平台
-![](32.png)
-![](36.png)
+![](posts/hugo-github-E-commerce/32.png)
+![](posts/hugo-github-E-commerce/33.png)
 
 ### 但当我们设置完回到wordpress会发现有一个报错
 ### WooCommerce 正常运行所需的一个或多个表缺失，某些功能可能无法正常工作：缺少表：wp_wc_order_product_lookup
 ### 这里我们可以手动创建一个
-![](33.png)
+![](posts/hugo-github-E-commerce/34.png)
 
 ```sql
 sudo mysql -u root -p
@@ -377,7 +377,7 @@ use wordpress;
 CREATE TABLE `wp_wc_order_product_lookup` ( `order_item_id` bigint(20) unsigned NOT NULL, `product_id` bigint(20) unsigned NOT NULL, `variation_id` bigint(20) unsigned NOT NULL DEFAULT 0, `quantity` int(11) NOT NULL DEFAULT 0, `order_id` bigint(20) unsigned NOT NULL, PRIMARY KEY (`order_item_id`), KEY `product_id` (`product_id`), KEY `order_id` (`order_id`), KEY `variation_id` (`variation_id`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 ```
 
-![](34.png)
+![](posts/hugo-github-E-commerce/35.png)
 
 ```bash
 #重启服务
@@ -385,6 +385,6 @@ systemctl restart nginx
 systemctl restart mariadb
 ```
 ### 添加完表后 完美解决
-![](35.png)
+![](posts/hugo-github-E-commerce/36.png)
 
 # 感谢您看到这里。具体的WooCommerce 商店的搭建美化我将放在Centos7.9通过Wordpress搭建电商平台（二）中分享。
