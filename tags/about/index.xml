@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>About on 维利翁的Hugo Blog</title>
+    <link>https://villion.xyz/tags/about/</link>
+    <description>Recent content in About on 维利翁的Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
+    <lastBuildDate>Wed, 11 Jun 2025 00:54:48 +0800</lastBuildDate>
+    <atom:link href="https://villion.xyz/tags/about/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于我about me</title>
+      <link>https://villion.xyz/_about/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/_about/</guid>
+      <description>这是摘要关于</description>
+    </item>
+  </channel>
+</rss>

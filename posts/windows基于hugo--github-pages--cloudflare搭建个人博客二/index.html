@@ -1,0 +1,350 @@
+<!doctype html><html lang=zh-CN><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><title>Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（二） - 维利翁的Hugo Blog</title><meta name=Description content="villion's hugo blog"><meta property="og:url" content="https://villion.xyz/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/">
+<meta property="og:site_name" content="维利翁的Hugo Blog"><meta property="og:title" content="Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（二）"><meta property="og:description" content="Building a Personal Blog on Windows Based on Hugo + GitHub Pages + Cloudflare (Part Two)"><meta property="og:locale" content="zh_CN"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2025-05-21T00:00:00+08:00"><meta property="article:modified_time" content="2025-06-27T10:15:58+08:00"><meta property="article:tag" content="Hugo"><meta property="article:tag" content="GithubPages"><meta property="article:tag" content="Blog"><meta property="og:image" content="https://villion.xyz/images/logo.png"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://villion.xyz/images/logo.png"><meta name=twitter:title content="Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（二）"><meta name=twitter:description content="Building a Personal Blog on Windows Based on Hugo + GitHub Pages + Cloudflare (Part Two)"><meta name=application-name content="我的网站"><meta name=apple-mobile-web-app-title content="我的网站"><meta name=theme-color content="#ffffff"><meta name=msapplication-TileColor content="#da532c"><link rel=icon href=/images/logo.svg><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://villion.xyz/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/><link rel=prev href=https://villion.xyz/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/><link rel=next href=https://villion.xyz/posts/%E8%BF%B7%E4%BD%A0%E4%B8%BB%E6%9C%BA%E5%9F%BA%E4%BA%8E%E5%AE%B6%E5%BA%AD%E5%AE%BD%E5%B8%A6%E6%90%AD%E5%BB%BA%E5%85%AC%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%A7%81%E6%9C%89%E4%BA%91-%E4%B8%80/><link rel=stylesheet href=/css/style.min.css><link rel=preload href=/lib/fontawesome-free/all.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload href=/lib/animate/animate.min.css as=style onload='this.onload=null,this.rel="stylesheet"'><noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（二）","inLanguage":"zh-CN","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/villion.xyz\/posts\/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C\/"},"genre":"posts","keywords":"Hugo, GithubPages, Blog","wordcount":2452,"url":"https:\/\/villion.xyz\/posts\/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C\/","datePublished":"2025-05-21T00:00:00+08:00","dateModified":"2025-06-27T10:15:58+08:00","license":"©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。","publisher":{"@type":"Organization","name":""},"author":{"@type":"Person","name":"维利翁"},"description":""}</script></head><body data-header-desktop=fixed data-header-mobile=auto><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":"auto"==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:"auto"==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="维利翁的Hugo Blog"><img class="lazyload logo" src=/svg/loading.min.svg data-src=/images/logo.jpg data-srcset="/images/logo.jpg, /images/logo.jpg 1.5x, /images/logo.jpg 2x" data-sizes=auto alt=/images/logo.jpg title=/images/logo.jpg><span id=id-1 class=typeit></span></a></div><div class=menu><div class=menu-inner><a class=menu-item href=/posts/>所有文章 </a><a class=menu-item href=/tags/>标签 </a><a class=menu-item href=/categories/>分类 </a><a class=menu-item href=/_about/>关于我 </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<input type=text placeholder="Search titles or contents..." id=search-input-desktop>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="维利翁的Hugo Blog"><img class="lazyload logo" src=/svg/loading.min.svg data-src=/images/logo.jpg data-srcset="/images/logo.jpg, /images/logo.jpg 1.5x, /images/logo.jpg 2x" data-sizes=auto alt=/images/logo.jpg title=/images/logo.jpg><span id=id-2 class=typeit></span></a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw" aria-hidden=true></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw" aria-hidden=true></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin" aria-hidden=true></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/posts/ title>所有文章</a><a class=menu-item href=/tags/ title>标签</a><a class=menu-item href=/categories/ title>分类</a><a class=menu-item href=/_about/ title>关于我</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（二）</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw" aria-hidden=true></i>维利翁</a></span>&nbsp;<span class=post-category>included in <a href=/categories/blog/><i class="far fa-folder fa-fw" aria-hidden=true></i>Blog</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw" aria-hidden=true></i>&nbsp;<time datetime=2025-05-21>2025-05-21</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden=true></i>&nbsp;2452 words&nbsp;
+<i class="far fa-clock fa-fw" aria-hidden=true></i>&nbsp;5 minutes&nbsp;</div></div><div class=featured-image><img class=lazyload src=/svg/loading.min.svg data-src=/b.jpg data-srcset="/b.jpg, /b.jpg 1.5x, /b.jpg 2x" data-sizes=auto alt=/b.jpg title=/b.jpg></div><div class="details toc" id=toc-static data-kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right" aria-hidden=true></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#在上一章本地运行hugo后我们将它推送到github仓库托管>在上一章本地运行hugo后我们将它推送到github仓库托管。</a></li><li><a href=#为什么要推送到github-pages托管>💻为什么要推送到github pages托管？</a></li></ul><ul><li><a href=#首先需要注册github账号这里我不做解释登陆成功后点击左上角new新建一个github仓库>首先需要注册github账号，这里我不做解释。登陆成功后点击左上角“New”新建一个github仓库</a></li><li><a href=#这里全部默认只有一点要注意>这里全部默认只有一点要注意：</a><ul><li><a href=#仓库名字必须为github账号的用户名也就是username而不是你的别名以我的账号为例子-我的用户名username是2163274936-别名name是villion所以我们的仓库名字应该是2163274936>仓库名字必须为==github账号==的用户名也就是username，而不是你的别名。以我的账号为例子 我的用户名(username)是2163274936 ，别名(name)是villion.所以我们的仓库名字应该是2163274936</a></li></ul></li><li><a href=#部署至-github-pages><strong>部署至 GitHub Pages</strong>：</a><ul><li><a href=#配置自动化部署>配置自动化部署</a></li><li><a href=#hugoyml-是什么>Hugo.yml 是什么？</a></li><li><a href=#为什么选择-gh-pages-分支>为什么选择 gh-pages 分支？</a></li><li><a href=#将下面给出的自动化推送代码复制粘贴进去打开内收代码toml><strong>将下面给出的自动化推送代码复制粘贴进去:（打开内收代码TOML）</strong></a></li></ul></li><li><a href=#通过黑曜石obsidian来更新hugo-blog-文章并添加git插件一键git-push>通过黑曜石（Obsidian）来更新hugo blog 文章并添加Git插件一键git push：</a></li></ul></nav></div></div><div class=content id=content><h2 id=在上一章本地运行hugo后我们将它推送到github仓库托管>在上一章本地运行hugo后我们将它推送到github仓库托管。</h2><h2 id=为什么要推送到github-pages托管>💻为什么要推送到github pages托管？</h2><ul><li><p><strong>自定义域名</strong>：GitHub提供免费二级域名，还可以自定义域名跳转增加个人属性</p></li><li><p><strong>版本控制</strong>：GitHub提供完善的版本管理，方便回滚</p></li><li><p><strong>跨设备同步</strong>：任意设备上更新代码或文章都能同步到线上。</p></li><li><p><strong>备份安全</strong>：仓库在云端，防止本地数据丢失。</p></li></ul><hr><h1 id=正式教程>正式教程：</h1><h2 id=首先需要注册github账号这里我不做解释登陆成功后点击左上角new新建一个github仓库>首先需要注册github账号，这里我不做解释。登陆成功后点击左上角“New”新建一个github仓库</h2><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/1.png data-srcset="posts/hugo-github-pages-two/1.png, posts/hugo-github-pages-two/1.png 1.5x, posts/hugo-github-pages-two/1.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/1.png title=posts/hugo-github-pages-two/1.png></p><h2 id=这里全部默认只有一点要注意>这里全部默认只有一点要注意：</h2><h3 id=仓库名字必须为github账号的用户名也就是username而不是你的别名以我的账号为例子-我的用户名username是2163274936-别名name是villion所以我们的仓库名字应该是2163274936>仓库名字必须为==github账号==的用户名也就是username，而不是你的别名。以我的账号为例子 我的用户名(username)是2163274936 ，别名(name)是villion.所以我们的仓库名字应该是2163274936</h3><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/3.png data-srcset="posts/hugo-github-pages-two/3.png, posts/hugo-github-pages-two/3.png 1.5x, posts/hugo-github-pages-two/3.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/3.png title=posts/hugo-github-pages-two/3.png>
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/2.png data-srcset="posts/hugo-github-pages-two/2.png, posts/hugo-github-pages-two/2.png 1.5x, posts/hugo-github-pages-two/2.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/2.png title=posts/hugo-github-pages-two/2.png>
+这里我建立了一个test仓库用于演示
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/4.png data-srcset="posts/hugo-github-pages-two/4.png, posts/hugo-github-pages-two/4.png 1.5x, posts/hugo-github-pages-two/4.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/4.png title=posts/hugo-github-pages-two/4.png></p><hr><h2 id=部署至-github-pages><strong>部署至 GitHub Pages</strong>：</h2><h3 id=配置自动化部署>配置自动化部署</h3><p>这里的自动化并不是push自动化 而是在每次git push后将原本需要手动部署这个过程：</p><p><code>hugo</code> 构建静态文件 → 将 <code>public</code> 目录内容手动推送到 <code>gh-pages</code> 分支。</p><p>自动化部署通过 Actions 脚本，将上述步骤封装为自动流程，无需每次手动操作。</p><hr><h3 id=hugoyml-是什么>Hugo.yml 是什么？</h3><p>Hugo.yml 是 Hugo 静态网站生成器的配置文件，用于存储网站的基本设置（如标题、作者、URL 等）、主题配置、页面参数等，是 Hugo 项目的核心配置文件。</p><h3 id=为什么选择-gh-pages-分支>为什么选择 gh-pages 分支？</h3><ul><li><strong>GitHub Pages 机制</strong>：GitHub Pages 默认会部署 <code>gh-pages</code> 分支或 <code>master</code> 分支 <code>/docs</code> 目录的内容作为静态网站。</li><li><strong>分离源码与部署</strong>：将源码放在主分支（如 <code>main</code>），<code>gh-pages</code> 专门存放编译后的静态文件，便于管理和持续集成。</li><li><strong>社区惯例</strong>：Hugo 等静态站点生成工具常使用此分支存放最终部署文件，符合 GitHub Pages 最佳实践。</li></ul><p><strong>创建工作流文件</strong>具体操作：
+在站点根目录创建 <code>.github/workflows</code> 目录，添加 YAML 配置文件（ <code>hugo.yml</code>），配置 GitHub Actions 自动拉取代码、运行 Hugo 构建、推送至 <code>gh-pages</code> 分支。</p><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/5.png data-srcset="posts/hugo-github-pages-two/5.png, posts/hugo-github-pages-two/5.png 1.5x, posts/hugo-github-pages-two/5.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/5.png title=posts/hugo-github-pages-two/5.png>
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/6.png data-srcset="posts/hugo-github-pages-two/6.png, posts/hugo-github-pages-two/6.png 1.5x, posts/hugo-github-pages-two/6.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/6.png title=posts/hugo-github-pages-two/6.png>
+创建hugo.yml</p><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/7.png data-srcset="posts/hugo-github-pages-two/7.png, posts/hugo-github-pages-two/7.png 1.5x, posts/hugo-github-pages-two/7.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/7.png title=posts/hugo-github-pages-two/7.png></p><h3 id=将下面给出的自动化推送代码复制粘贴进去打开内收代码toml><strong>将下面给出的自动化推送代码复制粘贴进去:（打开内收代码TOML）</strong></h3><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>  1
+</span><span class=lnt>  2
+</span><span class=lnt>  3
+</span><span class=lnt>  4
+</span><span class=lnt>  5
+</span><span class=lnt>  6
+</span><span class=lnt>  7
+</span><span class=lnt>  8
+</span><span class=lnt>  9
+</span><span class=lnt> 10
+</span><span class=lnt> 11
+</span><span class=lnt> 12
+</span><span class=lnt> 13
+</span><span class=lnt> 14
+</span><span class=lnt> 15
+</span><span class=lnt> 16
+</span><span class=lnt> 17
+</span><span class=lnt> 18
+</span><span class=lnt> 19
+</span><span class=lnt> 20
+</span><span class=lnt> 21
+</span><span class=lnt> 22
+</span><span class=lnt> 23
+</span><span class=lnt> 24
+</span><span class=lnt> 25
+</span><span class=lnt> 26
+</span><span class=lnt> 27
+</span><span class=lnt> 28
+</span><span class=lnt> 29
+</span><span class=lnt> 30
+</span><span class=lnt> 31
+</span><span class=lnt> 32
+</span><span class=lnt> 33
+</span><span class=lnt> 34
+</span><span class=lnt> 35
+</span><span class=lnt> 36
+</span><span class=lnt> 37
+</span><span class=lnt> 38
+</span><span class=lnt> 39
+</span><span class=lnt> 40
+</span><span class=lnt> 41
+</span><span class=lnt> 42
+</span><span class=lnt> 43
+</span><span class=lnt> 44
+</span><span class=lnt> 45
+</span><span class=lnt> 46
+</span><span class=lnt> 47
+</span><span class=lnt> 48
+</span><span class=lnt> 49
+</span><span class=lnt> 50
+</span><span class=lnt> 51
+</span><span class=lnt> 52
+</span><span class=lnt> 53
+</span><span class=lnt> 54
+</span><span class=lnt> 55
+</span><span class=lnt> 56
+</span><span class=lnt> 57
+</span><span class=lnt> 58
+</span><span class=lnt> 59
+</span><span class=lnt> 60
+</span><span class=lnt> 61
+</span><span class=lnt> 62
+</span><span class=lnt> 63
+</span><span class=lnt> 64
+</span><span class=lnt> 65
+</span><span class=lnt> 66
+</span><span class=lnt> 67
+</span><span class=lnt> 68
+</span><span class=lnt> 69
+</span><span class=lnt> 70
+</span><span class=lnt> 71
+</span><span class=lnt> 72
+</span><span class=lnt> 73
+</span><span class=lnt> 74
+</span><span class=lnt> 75
+</span><span class=lnt> 76
+</span><span class=lnt> 77
+</span><span class=lnt> 78
+</span><span class=lnt> 79
+</span><span class=lnt> 80
+</span><span class=lnt> 81
+</span><span class=lnt> 82
+</span><span class=lnt> 83
+</span><span class=lnt> 84
+</span><span class=lnt> 85
+</span><span class=lnt> 86
+</span><span class=lnt> 87
+</span><span class=lnt> 88
+</span><span class=lnt> 89
+</span><span class=lnt> 90
+</span><span class=lnt> 91
+</span><span class=lnt> 92
+</span><span class=lnt> 93
+</span><span class=lnt> 94
+</span><span class=lnt> 95
+</span><span class=lnt> 96
+</span><span class=lnt> 97
+</span><span class=lnt> 98
+</span><span class=lnt> 99
+</span><span class=lnt>100
+</span><span class=lnt>101
+</span><span class=lnt>102
+</span><span class=lnt>103
+</span><span class=lnt>104
+</span><span class=lnt>105
+</span><span class=lnt>106
+</span><span class=lnt>107
+</span><span class=lnt>108
+</span><span class=lnt>109
+</span><span class=lnt>110
+</span><span class=lnt>111
+</span><span class=lnt>112
+</span><span class=lnt>113
+</span><span class=lnt>114
+</span><span class=lnt>115
+</span><span class=lnt>116
+</span><span class=lnt>117
+</span><span class=lnt>118
+</span><span class=lnt>119
+</span><span class=lnt>120
+</span><span class=lnt>121
+</span><span class=lnt>122
+</span><span class=lnt>123
+</span><span class=lnt>124
+</span><span class=lnt>125
+</span><span class=lnt>126
+</span><span class=lnt>127
+</span><span class=lnt>128
+</span><span class=lnt>129
+</span><span class=lnt>130
+</span><span class=lnt>131
+</span><span class=lnt>132
+</span><span class=lnt>133
+</span><span class=lnt>134
+</span><span class=lnt>135
+</span><span class=lnt>136
+</span><span class=lnt>137
+</span><span class=lnt>138
+</span><span class=lnt>139
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-toml data-lang=toml><span class=line><span class=cl><span class=nx>name</span><span class=err>:</span> <span class=nx>Hugo</span> <span class=nx>Build</span> <span class=nx>and</span> <span class=nx>Deploy</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>on</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nx>push</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>branches</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>main</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=nx>jobs</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  <span class=nx>build-and-deploy</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>runs-on</span><span class=err>:</span> <span class=nx>ubuntu-latest</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>    <span class=nx>steps</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>name</span><span class=err>:</span> <span class=nx>Checkout</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>uses</span><span class=err>:</span> <span class=nx>actions</span><span class=err>/</span><span class=nx>checkout</span><span class=err>@</span><span class=nx>v4</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>with</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>submodules</span><span class=err>:</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>fetch-depth</span><span class=err>:</span> <span class=mi>0</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>name</span><span class=err>:</span> <span class=nx>Setup</span> <span class=nx>Hugo</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>uses</span><span class=err>:</span> <span class=nx>peaceiris</span><span class=err>/</span><span class=nx>actions-hugo</span><span class=err>@</span><span class=nx>v2</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>with</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>hugo-version</span><span class=err>:</span> <span class=s1>&#39;0.147.2&#39;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>extended</span><span class=err>:</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>name</span><span class=err>:</span> <span class=nx>Cache</span> <span class=nx>dependencies</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>uses</span><span class=err>:</span> <span class=nx>actions</span><span class=err>/</span><span class=nx>cache</span><span class=err>@</span><span class=nx>v3</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>with</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>path</span><span class=err>:</span> <span class=err>|</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>resources</span><span class=err>/</span><span class=nx>_gen</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>public</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>key</span><span class=err>:</span> <span class=err>$</span><span class=p>{{</span> <span class=nx>runner</span><span class=p>.</span><span class=nx>os</span> <span class=p>}}</span><span class=nx>-hugo-</span><span class=err>$</span><span class=p>{{</span> <span class=nx>hashFiles</span><span class=err>(</span><span class=s1>&#39;**/package-lock.json&#39;</span><span class=err>)</span> <span class=p>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>restore-keys</span><span class=err>:</span> <span class=err>|</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=err>$</span><span class=p>{{</span> <span class=nx>runner</span><span class=p>.</span><span class=nx>os</span> <span class=p>}}</span><span class=nx>-hugo-</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>name</span><span class=err>:</span> <span class=nx>Check</span> <span class=nx>and</span> <span class=nx>preserve</span> <span class=nx>CNAME</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>run</span><span class=err>:</span> <span class=err>|</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>if</span> <span class=p>[</span> <span class=nx>-f</span> <span class=s2>&#34;CNAME&#34;</span> <span class=p>]</span><span class=err>;</span> <span class=nx>then</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>echo</span> <span class=s2>&#34;✅ CNAME 文件存在，将在构建后复制到public目录&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>else</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>echo</span> <span class=s2>&#34;❌ 未找到CNAME文件，检查GitHub Pages设置中的自定义域名&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>if</span> <span class=p>[</span> <span class=nx>-n</span> <span class=s2>&#34;$CUSTOM_DOMAIN&#34;</span> <span class=p>]</span><span class=err>;</span> <span class=nx>then</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>              <span class=nx>echo</span> <span class=s2>&#34;使用环境变量中的域名创建CNAME文件&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>              <span class=nx>echo</span> <span class=s2>&#34;$CUSTOM_DOMAIN&#34;</span> <span class=err>&gt;</span> <span class=nx>CNAME</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>else</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>              <span class=nx>echo</span> <span class=s2>&#34;⚠️ 未设置CUSTOM_DOMAIN环境变量，将使用GitHub Pages默认域名&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>name</span><span class=err>:</span> <span class=nx>Build</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>env</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>HUGO_ENV</span><span class=err>:</span> <span class=nx>production</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>CUSTOM_DOMAIN</span><span class=err>:</span> <span class=err>$</span><span class=p>{{</span> <span class=nx>secrets</span><span class=p>.</span><span class=nx>CUSTOM_DOMAIN</span> <span class=p>}}</span>  <span class=c># 从GitHub Secrets获取域名</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>run</span><span class=err>:</span> <span class=err>|</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>hugo</span> <span class=nx>version</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>hugo</span> <span class=nx>--minify</span> <span class=nx>--gc</span> <span class=nx>--cleanDestinationDir</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=c># 构建后始终复制CNAME文件，确保覆盖public目录</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>if</span> <span class=p>[</span> <span class=nx>-f</span> <span class=s2>&#34;CNAME&#34;</span> <span class=p>]</span><span class=err>;</span> <span class=nx>then</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>cp</span> <span class=nx>CNAME</span> <span class=nx>public</span><span class=err>/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>            <span class=nx>echo</span> <span class=s2>&#34;✅ CNAME文件已复制到public目录&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>fi</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>echo</span> <span class=s2>&#34;构建完成，输出内容:&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>ls</span> <span class=nx>-al</span> <span class=nx>public</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>  
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>      <span class=nx>-</span> <span class=nx>name</span><span class=err>:</span> <span class=nx>Deploy</span> <span class=nx>to</span> <span class=nx>GitHub</span> <span class=nx>Pages</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>uses</span><span class=err>:</span> <span class=nx>peaceiris</span><span class=err>/</span><span class=nx>actions-gh-pages</span><span class=err>@</span><span class=nx>v4</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>        <span class=nx>with</span><span class=err>:</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>github_token</span><span class=err>:</span> <span class=err>$</span><span class=p>{{</span> <span class=nx>secrets</span><span class=p>.</span><span class=nx>GITHUB_TOKEN</span> <span class=p>}}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>publish_dir</span><span class=err>:</span> <span class=p>.</span><span class=err>/</span><span class=nx>public</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>publish_branch</span><span class=err>:</span> <span class=nx>gh-pages</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>force_orphan</span><span class=err>:</span> <span class=kc>true</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>          <span class=nx>commit_message</span><span class=err>:</span> <span class=err>$</span><span class=p>{{</span> <span class=nx>github</span><span class=p>.</span><span class=nx>event</span><span class=p>.</span><span class=nx>head_commit</span><span class=p>.</span><span class=nx>message</span> <span class=p>}}</span>
+</span></span></code></pre></td></tr></table></div></div><p>配置完 <strong>GitHub Actions</strong>后
+我们先手动推送一下 看看有没有报错后续再配置自动git推送
+这里大家只需要参考命令 回显不需要看</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-bash data-lang=bash><span class=line><span class=cl>git branch -M main
+</span></span><span class=line><span class=cl><span class=c1># 1. 将本地仓库与远程 GitHub 仓库建立连接</span>
+</span></span><span class=line><span class=cl>git remote add origin git@github.com:2163274936/test.git
+</span></span><span class=line><span class=cl><span class=c1># 2. 添加所有文件到暂存区</span>
+</span></span><span class=line><span class=cl>git add .
+</span></span><span class=line><span class=cl><span class=c1># 3. 重命名当前所在的分支</span>
+</span></span><span class=line><span class=cl>git branch -M main
+</span></span><span class=line><span class=cl><span class=c1># 4. 提交到本地仓库（必须执行）</span>
+</span></span><span class=line><span class=cl>git commit -m <span class=s2>&#34;Initial commit&#34;</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=c1># 5. 推送至 GitHub（若本地是 main 分支）</span>
+</span></span><span class=line><span class=cl>git push -u origin main
+</span></span></code></pre></td></tr></table></div></div><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/8.png data-srcset="posts/hugo-github-pages-two/8.png, posts/hugo-github-pages-two/8.png 1.5x, posts/hugo-github-pages-two/8.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/8.png title=posts/hugo-github-pages-two/8.png>
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/10.png data-srcset="posts/hugo-github-pages-two/10.png, posts/hugo-github-pages-two/10.png 1.5x, posts/hugo-github-pages-two/10.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/10.png title=posts/hugo-github-pages-two/10.png>
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/9.png data-srcset="posts/hugo-github-pages-two/9.png, posts/hugo-github-pages-two/9.png 1.5x, posts/hugo-github-pages-two/9.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/9.png title=posts/hugo-github-pages-two/9.png>
+推送成功后我们回到github仓库 发现文件已经上来了
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/11.png data-srcset="posts/hugo-github-pages-two/11.png, posts/hugo-github-pages-two/11.png 1.5x, posts/hugo-github-pages-two/11.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/11.png title=posts/hugo-github-pages-two/11.png>
+但却有一个报错<br><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/12.png data-srcset="posts/hugo-github-pages-two/12.png, posts/hugo-github-pages-two/12.png 1.5x, posts/hugo-github-pages-two/12.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/12.png title=posts/hugo-github-pages-two/12.png>
+这个错误是由于 GitHub Actions 的默认权限配置导致的。当你使用 <code>peaceiris/actions-gh-pages@v4</code> 这个 Action 时，需要确保 GitHub Actions 工作流有权限推送到你的仓库。</p><p>我们点击settings - Actions - General
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/13.png data-srcset="posts/hugo-github-pages-two/13.png, posts/hugo-github-pages-two/13.png 1.5x, posts/hugo-github-pages-two/13.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/13.png title=posts/hugo-github-pages-two/13.png>
+拉到最下面 点击read and write 给予Workflow(工作流)读写权限 别忘了“save”保存
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/14.png data-srcset="posts/hugo-github-pages-two/14.png, posts/hugo-github-pages-two/14.png 1.5x, posts/hugo-github-pages-two/14.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/14.png title=posts/hugo-github-pages-two/14.png>
+经过上述操作后就可以解决权限报错问题。
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/28.png data-srcset="posts/hugo-github-pages-two/28.png, posts/hugo-github-pages-two/28.png 1.5x, posts/hugo-github-pages-two/28.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/28.png title=posts/hugo-github-pages-two/28.png></p><hr><h2 id=通过黑曜石obsidian来更新hugo-blog-文章并添加git插件一键git-push>通过黑曜石（Obsidian）来更新hugo blog 文章并添加Git插件一键git push：</h2><p>使用黑曜石（Obsidian）来更新 Hugo 博客的原因主要与其独特的笔记管理能力、文件兼容性和工作流优势有关。</p><p>Hugo 博客本质上是通过 Markdown 文件生成静态页面，而黑曜石的笔记文件天然兼容 Markdown 格式。只需将黑曜石中的笔记导出或直接复制到 Hugo 项目的<code>content</code>目录下，即可直接用于博客构建，无需格式转换。</p><p>在《Windows 系统中基于 Hugo + GitHub Pages + Cloudflare 搭建个人博客（一）》中，已提及 Obsidian 黑曜石的官方网站，此处不再重复。</p><p>我们需要完成以下操作：下载黑曜石，打开软件，添加仓库。
+点击"打开本地仓库" 选择我们D盘下的myblog 里hugo存放文章的content</p><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/16.png data-srcset="posts/hugo-github-pages-two/16.png, posts/hugo-github-pages-two/16.png 1.5x, posts/hugo-github-pages-two/16.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/16.png title=posts/hugo-github-pages-two/16.png></p><p>这就是Obsidian的主界面我们在这里写文章。
+关于如何操作黑曜石我放在后续的分享里，这里不过介绍。
+点击设置按钮 我们要添加git插件</p><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/17.png data-srcset="posts/hugo-github-pages-two/17.png, posts/hugo-github-pages-two/17.png 1.5x, posts/hugo-github-pages-two/17.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/17.png title=posts/hugo-github-pages-two/17.png></p><p>点击 “第三方插件” - 关闭安全模式后可以下载插件</p><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/18.png data-srcset="posts/hugo-github-pages-two/18.png, posts/hugo-github-pages-two/18.png 1.5x, posts/hugo-github-pages-two/18.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/18.png title=posts/hugo-github-pages-two/18.png></p><p>点击浏览按钮
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/19.png data-srcset="posts/hugo-github-pages-two/19.png, posts/hugo-github-pages-two/19.png 1.5x, posts/hugo-github-pages-two/19.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/19.png title=posts/hugo-github-pages-two/19.png></p><p>搜索Git 第一个就是我们要下载的插件
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/20.png data-srcset="posts/hugo-github-pages-two/20.png, posts/hugo-github-pages-two/20.png 1.5x, posts/hugo-github-pages-two/20.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/20.png title=posts/hugo-github-pages-two/20.png></p><p>安装后点击「启用」，你就能直接在黑曜石中一键推送，无需再到命令行手动操作。
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/21.png data-srcset="posts/hugo-github-pages-two/21.png, posts/hugo-github-pages-two/21.png 1.5x, posts/hugo-github-pages-two/21.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/21.png title=posts/hugo-github-pages-two/21.png></p><p>这里点击选项有一些自动定时推送。但我个人觉得不一定要配置，手动git push 可能更加安全。
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/22.png data-srcset="posts/hugo-github-pages-two/22.png, posts/hugo-github-pages-two/22.png 1.5x, posts/hugo-github-pages-two/22.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/22.png title=posts/hugo-github-pages-two/22.png></p><p>左侧为我们刚下载的插件 右侧为推送的目录 这里Obsidian的git 插件会自动识别的仓库地址
+我们要推送只需要点击向上箭头的按钮 因为我们上面手动初始化了本地仓库并配置了 remote；
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/23.png data-srcset="posts/hugo-github-pages-two/23.png, posts/hugo-github-pages-two/23.png 1.5x, posts/hugo-github-pages-two/23.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/23.png title=posts/hugo-github-pages-two/23.png><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/24.png data-srcset="posts/hugo-github-pages-two/24.png, posts/hugo-github-pages-two/24.png 1.5x, posts/hugo-github-pages-two/24.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/24.png title=posts/hugo-github-pages-two/24.png>
+箭头所指向的就是 git push 推送按钮</p><hr><p>但第一次推送后 github pages会报错
+<img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/25.png data-srcset="posts/hugo-github-pages-two/25.png, posts/hugo-github-pages-two/25.png 1.5x, posts/hugo-github-pages-two/25.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/25.png title=posts/hugo-github-pages-two/25.png>
+解决方案:</p><p><strong>修改 GitHub Pages 部署源</strong></p><ol><li>进入仓库的 <strong>Settings > Pages</strong></li><li>将 <strong>Source</strong> 从 <code>GitHub Actions</code> 改为 <code>Deploy from a branch</code></li><li>选择 <code>gh-pages</code> 分支（根目录 <code>/</code>）</li><li>保存设置后重新触发 Actions 工作流</li></ol><p><img class=lazyload src=/svg/loading.min.svg data-src=posts/hugo-github-pages-two/26.png data-srcset="posts/hugo-github-pages-two/26.png, posts/hugo-github-pages-two/26.png 1.5x, posts/hugo-github-pages-two/26.png 2x" data-sizes=auto alt=posts/hugo-github-pages-two/26.png title=posts/hugo-github-pages-two/26.png></p><hr><p>修改完毕后再到黑曜石 Git推送就能成功了！
+到这里我们就基本完成了自动化部署，接下来就是自定义域名以及blog美化的介绍。
+我将放在Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（三）中。</p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2025-06-27</span></div></div><div class=post-info-line><div class=post-info-md><span><a class=link-to-markdown href=/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%BA%8C/index.md target=_blank>Read Markdown</a></span></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw" aria-hidden=true></i>&nbsp;<a href=/tags/hugo/>Hugo</a>,&nbsp;<a href=/tags/githubpages/>GithubPages</a>,&nbsp;<a href=/tags/blog/>Blog</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/posts/windows%E5%9F%BA%E4%BA%8Ehugo--github-pages--cloudflare%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E4%B8%80/ class=prev rel=prev title="Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（一）"><i class="fas fa-angle-left fa-fw" aria-hidden=true></i>Windows基于Hugo + GitHub Pages + Cloudflare搭建个人博客（一）</a>
+<a href=/posts/%E8%BF%B7%E4%BD%A0%E4%B8%BB%E6%9C%BA%E5%9F%BA%E4%BA%8E%E5%AE%B6%E5%BA%AD%E5%AE%BD%E5%B8%A6%E6%90%AD%E5%BB%BA%E5%85%AC%E7%BD%91%E6%9C%8D%E5%8A%A1%E5%99%A8-%E7%A7%81%E6%9C%89%E4%BA%91-%E4%B8%80/ class=next rel=next title=" 迷你主机基于家庭宽带搭建公网服务器 —— 私有云 (一)">迷你主机基于家庭宽带搭建公网服务器 —— 私有云 (一)<i class="fas fa-angle-right fa-fw" aria-hidden=true></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line>Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱:villioncps7@gmail.com。</div><div class=footer-line itemscope itemtype=http://schema.org/CreativeWork><i class="far fa-copyright fa-fw" aria-hidden=true></i><span itemprop=copyrightYear>2025</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank>维利翁</a></span>&nbsp;|&nbsp;<span class=license><a rel="license external nofollow noopener noreffer" href=https://creativecommons.org/licenses/by-nc/4.0/ target=_blank>CC BY-NC 4.0</a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw" aria-hidden=true></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw" aria-hidden=true></i></a></div><link rel=stylesheet href=/lib/lightgallery/css/lightgallery-bundle.min.css><link rel=stylesheet href=/lib/katex/katex.min.css><link rel=stylesheet href=/lib/cookieconsent/cookieconsent.min.css><link rel=stylesheet href=custom.css><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lunr/lunr.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/lightgallery/lightgallery.min.js></script><script type=text/javascript src=/lib/lightgallery/plugins/thumbnail/lg-thumbnail.min.js></script><script type=text/javascript src=/lib/lightgallery/plugins/zoom/lg-zoom.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript src=/lib/sharer/sharer.min.js></script><script type=text/javascript src=/lib/typeit/index.umd.js></script><script type=text/javascript src=/lib/katex/katex.min.js></script><script type=text/javascript src=/lib/katex/contrib/auto-render.min.js></script><script type=text/javascript src=/lib/katex/contrib/copy-tex.min.js></script><script type=text/javascript src=/lib/katex/contrib/mhchem.min.js></script><script type=text/javascript src=/lib/cookieconsent/cookieconsent.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:200},comment:{},cookieconsent:{content:{dismiss:"Got it!",link:"Learn more",message:"This website uses Cookies to improve your experience."},enable:!0,palette:{button:{background:"#f0f0f0"},popup:{background:"#1aa3ff"}},theme:"edgeless"},data:{"id-1":"villion","id-2":"villion"},lightgallery:!0,math:{delimiters:[{display:!0,left:"$$",right:"$$"},{display:!0,left:"\\[",right:"\\]"},{display:!0,left:"\\begin{equation}",right:"\\end{equation}"},{display:!0,left:"\\begin{equation*}",right:"\\end{equation*}"},{display:!0,left:"\\begin{align}",right:"\\end{align}"},{display:!0,left:"\\begin{align*}",right:"\\end{align*}"},{display:!0,left:"\\begin{alignat}",right:"\\end{alignat}"},{display:!0,left:"\\begin{alignat*}",right:"\\end{alignat*}"},{display:!0,left:"\\begin{gather}",right:"\\end{gather}"},{display:!0,left:"\\begin{CD}",right:"\\end{CD}"},{display:!1,left:"$",right:"$"},{display:!1,left:"\\(",right:"\\)"}],strict:!1},search:{highlightTag:"em",lunrIndexURL:"/index.json",maxResultLength:10,noResultsFound:"No results found",snippetLength:50,type:"lunr"},typeit:{cursorChar:"|",cursorSpeed:1e3,data:{"id-1":["id-1"],"id-2":["id-2"]},duration:-1,speed:100}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>

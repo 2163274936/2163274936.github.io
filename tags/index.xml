@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on 维利翁的Hugo Blog</title>
+    <link>https://villion.xyz/tags/</link>
+    <description>Recent content in Tags on 维利翁的Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
+    <lastBuildDate>Fri, 27 Jun 2025 10:15:58 +0800</lastBuildDate>
+    <atom:link href="https://villion.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://villion.xyz/tags/blog/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Centos</title>
+      <link>https://villion.xyz/tags/centos/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/centos/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VMWorkstation</title>
+      <link>https://villion.xyz/tags/vmworkstation/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/vmworkstation/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>WordPress</title>
+      <link>https://villion.xyz/tags/wordpress/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/wordpress/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>电商</title>
+      <link>https://villion.xyz/tags/%E7%94%B5%E5%95%86/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/%E7%94%B5%E5%95%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>GithubPages</title>
+      <link>https://villion.xyz/tags/githubpages/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/githubpages/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Hugo</title>
+      <link>https://villion.xyz/tags/hugo/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/hugo/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>VirtualNetworkCard</title>
+      <link>https://villion.xyz/tags/virtualnetworkcard/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/virtualnetworkcard/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Windows</title>
+      <link>https://villion.xyz/tags/windows/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/windows/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>虚拟网卡</title>
+      <link>https://villion.xyz/tags/%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</link>
+      <pubDate>Sat, 07 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/%E8%99%9A%E6%8B%9F%E7%BD%91%E5%8D%A1/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mini主机</title>
+      <link>https://villion.xyz/tags/mini%E4%B8%BB%E6%9C%BA/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/mini%E4%B8%BB%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>公网IP</title>
+      <link>https://villion.xyz/tags/%E5%85%AC%E7%BD%91ip/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/%E5%85%AC%E7%BD%91ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>私有云</title>
+      <link>https://villion.xyz/tags/%E7%A7%81%E6%9C%89%E4%BA%91/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/%E7%A7%81%E6%9C%89%E4%BA%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>运营商</title>
+      <link>https://villion.xyz/tags/%E8%BF%90%E8%90%A5%E5%95%86/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/%E8%BF%90%E8%90%A5%E5%95%86/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>About</title>
+      <link>https://villion.xyz/tags/about/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/tags/about/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

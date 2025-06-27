@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on 维利翁的Hugo Blog</title>
+    <link>https://villion.xyz/categories/</link>
+    <description>Recent content in Categories on 维利翁的Hugo Blog</description>
+    <generator>Hugo</generator>
+    <language>zh-CN</language>
+    <copyright>©️ 2025 Daqi Tang.博客资源来自互联网，仅为个人学习用途如有侵权请联系本人邮箱。</copyright>
+    <lastBuildDate>Fri, 27 Jun 2025 10:15:58 +0800</lastBuildDate>
+    <atom:link href="https://villion.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Blog</title>
+      <link>https://villion.xyz/categories/blog/</link>
+      <pubDate>Tue, 10 Jun 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/categories/blog/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>Mini主机</title>
+      <link>https://villion.xyz/categories/mini%E4%B8%BB%E6%9C%BA/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/categories/mini%E4%B8%BB%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>公网IP</title>
+      <link>https://villion.xyz/categories/%E5%85%AC%E7%BD%91ip/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/categories/%E5%85%AC%E7%BD%91ip/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>宽带</title>
+      <link>https://villion.xyz/categories/%E5%AE%BD%E5%B8%A6/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/categories/%E5%AE%BD%E5%B8%A6/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>私有云</title>
+      <link>https://villion.xyz/categories/%E7%A7%81%E6%9C%89%E4%BA%91/</link>
+      <pubDate>Wed, 28 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/categories/%E7%A7%81%E6%9C%89%E4%BA%91/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>关于</title>
+      <link>https://villion.xyz/categories/%E5%85%B3%E4%BA%8E/</link>
+      <pubDate>Sun, 11 May 2025 00:00:00 +0800</pubDate>
+      <guid>https://villion.xyz/categories/%E5%85%B3%E4%BA%8E/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>
